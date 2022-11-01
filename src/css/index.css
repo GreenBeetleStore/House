@@ -1,13 +1,103 @@
+@charset "UTF-8";
+/* main · src/sass/main.scss
+   Els porcentatges d'amplades son calculats segons el body amb un viewport-width de 1440px.
+   L'amplada màxima del Parent de 1240px, al descomptar el padding: 0 6.94%; del body; 
+*/
+/* banner · src/sass/layouts/_banner.scss */
+.K-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+}
+.K-banner__img {
+  position: absolute;
+  z-index: -2;
+  width: 86.1%;
+  height: 223px;
+  margin: 0 auto;
+  align-self: center;
+  position: absolute;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.K-banner__title {
+  position: relative;
+  z-index: 10;
+  top: 82px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3.35vw; /* 48px */
+  font-weight: 500;
+}
+
+/* base ·🧿· src/sass/layouts/_base.scss */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #FFFFFF;
+  justify-content: center;
+  padding: 0 6.94%; /* Padding lateral 100px */
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+#root {
+  width: 100%; /* 1240px */
+}
+
+/* header · src/sass/layouts/_header.scss */
+.K-header {
+  width: 100%;
+  color: #FF6060;
+  text-align: left;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.K-header__logo {
+  position: relative;
+  left: -10px;
+  width: 37%; /* Son 222px exterior -12px de pas per tot = 210px */
+}
+.K-header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 24.92%; /* Son 309px */
+  height: 34px;
+}
+.K-header__menu__ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 65px;
+  list-style: none;
+  font-size: 1.67vw; /* Son 24px */
+  font-weight: 500;
+}
+
+.K-header__menu a {
+  text-decoration: none;
+  color: #FF6060;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.K-header__menu a:hover,
+a:focus {
+  background-size: 100% 2px;
+}
+
+/*# sourceMappingURL=index.css.map */

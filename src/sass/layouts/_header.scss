@@ -1,0 +1,49 @@
+/* header · src/sass/layouts/_header.scss */
+
+// Home K-header
+.K-header {
+   width: 100%;
+   color: $colorPrimari;
+   text-align: left;
+   padding: 35px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   &__logo {
+      position: relative;
+      left: -10px;
+      width: 37%; /* Son 222px exterior -12px de pas per tot = 210px */
+   }
+   &__menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 24.92%; /* Son 309px */
+      height: 34px;
+      &__ul {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         gap: 65px;
+         list-style: none;
+         font-size: 1.67vw; /* Son 24px */
+         font-weight: 500;
+      }
+   }
+}
+
+.K-header__menu a {
+   text-decoration: none;
+   color: $colorPrimari;
+   background-image: linear-gradient(currentColor, currentColor);
+   background-position: 0% 100%;
+   background-repeat: no-repeat;
+   background-size: 0% 2px;
+   transition: background-size 0.3s;
+}
+
+.K-header__menu a:hover,
+a:focus {
+   background-size: 100% 2px;
+}

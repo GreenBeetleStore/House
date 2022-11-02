@@ -1,28 +1,28 @@
 /* footer 👣 src/sass/layouts/_footer.scss */
 
 .K-Footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: $colorTerciari;
-      margin: 20px auto 0 auto;
-      width: 100%;
-      height: 209px;
-      
-      &__logo {
-           width: 144px;
-           height: auto;
-           margin: 66px auto 0 auto;
-      }
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: $colorTerciari;
+   margin: 20px auto 0 auto;
+   width: 100%;
+   height: 209px;
 
-      &__copyright {
-            width: 35.63%;
-            height: 46px;
-            color: $colorSecundari;
-            font-size: 1.67vw;
-            font-weight: 500;
-            text-align: center;
-            margin: 0 auto;
-      }
+   &__logo {
+      width: 144px;
+      height: auto;
+      margin: 66px auto 0 auto;
+   }
+
+   &__copyright {
+      width: 35.63%;
+      height: 46px;
+      color: $colorSecundari;
+      font-size: 1.67vw;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 auto;
+   }
 }

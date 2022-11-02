@@ -81,6 +81,7 @@ code {
   margin: 0 auto;
 }
 
+/* gallery 🍱 src/sass/layouts/_gallery.scss */
 .K-Gallery {
   display: flex;
   justify-content: space-around;

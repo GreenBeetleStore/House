@@ -11,17 +11,20 @@
    justify-content: space-between;
    flex-direction: row;
    align-items: center;
+
    &__logo {
       position: relative;
       left: -10px;
       width: 37%; /* Son 222px exterior -12px de pas per tot = 210px */
    }
+
    &__menu {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      width: auto; 
+      width: auto;
       height: 34px;
+
       &__ul {
          display: flex;
          justify-content: flex-end;
@@ -31,6 +34,7 @@
          list-style: none;
          font-size: 1.67vw; /* Son 24px */
          font-weight: 500;
+
          &__li {
             width: 140px;
             height: 34px;

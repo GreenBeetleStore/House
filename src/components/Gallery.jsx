@@ -1,3 +1,5 @@
+/* Gallery 🍱 src/components/Gallery.jsx */
+
 import React from 'react'
 import saloon from '../assets/images/sejour.webp'
 
@@ -76,7 +78,6 @@ const Gallery = () => {
                </span>
             </article>
          </a>
-         
       </section>
    )
 }

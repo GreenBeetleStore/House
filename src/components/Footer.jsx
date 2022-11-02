@@ -1,17 +1,21 @@
 import React from 'react'
-import homeBanner from '../assets/images/banner01.webp'
+import logoB from '../assets/images/logoB.png'
 
 const Banner = () => {
-   return (
-      <section className="K-Banner">
-         <img
-            src={homeBanner}
-            alt="Falaises en bord de mer"
-            className="K-banner__img"
-         />
-         <h1 className="K-banner__title">Chez vous, partout et ailleurs</h1>
-      </section>
-   )
+      return (
+            <footer className="K-Footer">
+               <a href="../pages/Home">
+                  <img
+                     className="K-Footer__logo"
+                     src={logoB}
+                     alt="Logo de l'immobilier Kasa"
+                  />
+               </a>
+               <h3 className="K-Footer__copyright">
+                  © 2020 Kasa. All rights reserved
+               </h3>
+            </footer>
+         )
 }
 
 export default Banner

@@ -1,17 +1,176 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 18 | @import "./layouts/footer";
- *    |         ^^^^^^^^^^^^^^^^^^
- *    '
- *   src\sass\main.scss 18:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 18 \2502  @import \"./layouts/footer\";\d\a    \2502          ^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\sass\\main.scss 18:9  root stylesheet";
+@charset "UTF-8";
+/* main · src/sass/main.scss
+   Els porcentatges d'amplades son calculats segons el body amb un viewport-width de 1440px.
+   L'amplada màxima del Parent de 1240px, al descomptar el padding: 0 6.94%; del body; 
+*/
+/* banner 🎏 src/sass/layouts/_banner.scss */
+.K-Banner {
+  margin: 0 6.94%;
+  width: 86.11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  border-radius: 25px;
 }
+.K-Banner__img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+}
+.K-Banner__title {
+  display: flex;
+  position: absolute;
+  top: 210px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3.35vw; /* 48px */
+  font-weight: 500;
+}
+
+/* base ·🧿· src/sass/layouts/_base.scss */
+body {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  width: 100%; /* 1240px */
+}
+
+/* footer 👣 src/sass/layouts/_footer.scss */
+.K-Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  height: 209px;
+}
+.K-Footer__logo {
+  width: 144px;
+  height: auto;
+  margin: 66px auto 0 auto;
+}
+.K-Footer__copyright {
+  width: 35.63%;
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 1.67vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.K-Gallery {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  margin: 46px 6.94%;
+  width: 1240px;
+  height: 829px;
+  border-radius: 25px;
+}
+.K-Gallery__article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+.K-Gallery__article img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: #FF6060;
+}
+.K-Gallery__article__title {
+  width: 300px;
+  height: 52px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.26vw;
+  color: #FFFFFF;
+  position: absolute;
+  top: 740px;
+  outline: 1px solid orangered;
+}
+
+/* header 🤯 src/sass/layouts/_header.scss */
+.K-header {
+  margin: 0 6.94%;
+  width: 86.11%;
+  color: #FF6060;
+  text-align: left;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.K-header__logo {
+  position: relative;
+  left: -10px;
+  width: 37%; /* Son 222px exterior -12px de pas per tot = 210px */
+}
+.K-header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  height: 34px;
+}
+.K-header__menu__ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  grid-gap: 18%;
+  list-style: none;
+  font-size: 1.67vw; /* Son 24px */
+  font-weight: 500;
+}
+.K-header__menu__ul__li {
+  width: 140px;
+  height: 34px;
+  padding: 0;
+  flex-wrap: nowrap;
+  text-align: right;
+}
+
+.K-header__menu a {
+  text-decoration: none;
+  color: #FF6060;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.K-header__menu a:hover,
+a:focus {
+  background-size: 100% 2px;
+}
+
+/*# sourceMappingURL=index.css.map */

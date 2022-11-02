@@ -7,9 +7,9 @@ const Banner = () => {
             <img
                src={homeBanner}
                alt="Falaises en bord de mer"
-               className="K-banner__img"
+               className="K-Banner__img"
             />
-            <h1 className="K-banner__title">Chez vous, partout et ailleurs</h1>
+            <h1 className="K-Banner__title">Chez vous, partout et ailleurs</h1>
       </section>
    )
 }

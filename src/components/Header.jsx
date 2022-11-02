@@ -9,10 +9,10 @@ const Header = () => {
             </a>
             <nav className="K-header__menu">
                <ul className="K-header__menu__ul">
-                  <li>
+                  <li className="K-header__menu__ul__li">
                      <a href="../pages/Home.jsx">Accueil</a>
                   </li>
-                  <li>
+                  <li className="K-header__menu__ul__li">
                      <a href="../pages/About.jsx">A Propos</a>
                   </li>
                </ul>

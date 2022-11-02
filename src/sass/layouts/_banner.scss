@@ -1,4 +1,4 @@
-/* banner · src/sass/layouts/_banner.scss */
+/* banner 🎏 src/sass/layouts/_banner.scss */
 
 // Home K-Banner.
 .K-banner {
@@ -11,7 +11,6 @@
    
    &__img {
       position: absolute;
-      z-index: -2;
       width: 86.1%;
       height: 223px;
       margin: 0 auto;
@@ -23,7 +22,6 @@
 
    &__title {
       position: relative;
-      z-index: 10;
       top: 82px;
       color: $colorSecundari;
       text-align: center;

@@ -1,4 +1,4 @@
-/* header · src/sass/layouts/_header.scss */
+/* header 🤯 src/sass/layouts/_header.scss */
 
 // Home K-header
 .K-header {
@@ -19,16 +19,24 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      width: 24.92%; /* Son 309px */
+      width: auto; 
       height: 34px;
       &__ul {
          display: flex;
          justify-content: flex-end;
          align-items: center;
-         gap: 65px;
+         flex-wrap: nowrap;
+         grid-gap: 18%;
          list-style: none;
          font-size: 1.67vw; /* Son 24px */
          font-weight: 500;
+         &__li {
+            width: 140px;
+            height: 34px;
+            padding: 0;
+            flex-wrap: nowrap;
+            text-align: right;
+         }
       }
    }
 }

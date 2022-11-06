@@ -12,23 +12,32 @@
    flex-direction: row;
    align-items: center;
 
+   & > a {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 222px;
+      height: auto;
+   }
+
    &__logo {
       position: relative;
-      left: -10px;
-      width: 37%; /* Son 222px exterior -12px de pas per tot = 210px */
+      left: -8px;
+      width: 100%; /* Son 222px exterior -12px de pas per tot = 210px */
    }
 
    &__menu {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      width: auto;
+      width: 35%;
       height: 34px;
 
       &__ul {
          display: flex;
          justify-content: flex-end;
          align-items: center;
+         width: 200%;
          flex-wrap: nowrap;
          grid-gap: 18%;
          list-style: none;

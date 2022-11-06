@@ -1,0 +1,48 @@
+/* Error 🐛 src/sass/layouts/_error.scss */
+
+.K-Error {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: $colorPrimari;
+
+   &__msg404 {
+      display: flex;
+      align-items: center;
+      text-align: right;
+      width: 48.15%; // 597px
+      height: fit-content;
+      font-size: 20.16vw; // 288px
+      font-weight: 700;
+      line-height: 410.69px;
+      margin: 0 auto 0 auto;
+   }
+
+   &__subTitle {
+      display: flex;
+      align-items: flex-end;
+      font-size: 2.52vw; // 36px
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%; // 51px
+      margin: 0 auto 182px auto;
+   }
+
+   > a {
+      font-size: 1.26vw;
+      font-weight: 500;
+      line-height: 142.6%;
+      text-decoration: none;
+      margin: 0 auto 159px auto;
+      color: $colorPrimari;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 0.3s;
+   }
+
+   > a:hover, a:focus {
+      background-size: 100% 2px;
+   }
+}

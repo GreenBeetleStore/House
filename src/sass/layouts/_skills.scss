@@ -1,0 +1,46 @@
+.K-Skills {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 71.11%;          // 1024px
+   height: auto;
+   margin: 33px auto 33px auto;
+   
+   &__article {
+      display: flex;
+      flex-direction: column;
+      background-color: $colorFitxes;
+      border-radius: 5px;
+      width: 100%;            // 1024px
+      height: min-content;
+      margin-bottom: 33px;
+
+      &__statement {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 2.15%;          // 22px
+         height: 47px;
+         border-radius: 5px;
+         background-color: $colorPrimari;
+
+         & h3 {
+            color: $colorSecundari;
+            text-align: left;
+            font-size: 1.68vw;            // 24px
+            font-weight: 500;
+            line-height: 34.22px;
+         }
+      }
+
+      & p {
+            padding: 22px;
+            text-align: left;
+            color: $colorPrimari;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.68vw;            // 24px
+            line-height: 142.6%;
+      }
+   }
+}

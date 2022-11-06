@@ -99,6 +99,9 @@ code {
   align-items: flex-end;
   border-radius: 10px;
 }
+.K-Gallery__article a {
+  text-decoration: none;
+}
 .K-Gallery__article img {
   width: 340px;
   height: 340px;
@@ -106,15 +109,18 @@ code {
   background: #FF6060;
 }
 .K-Gallery__article__title {
+  display: flex;
   width: 300px;
   height: 52px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.26vw;
+  line-height: 25.67px;
+  text-align: center;
   color: #FFFFFF;
-  position: absolute;
-  top: 740px;
-  outline: 1px solid orangered;
+  margin-top: -75px;
+  margin-left: 20px;
+  outline: 1px solid blueviolet;
 }
 
 /* header 🤯 src/sass/layouts/_header.scss */
@@ -172,6 +178,49 @@ code {
 .K-header__menu a:hover,
 a:focus {
   background-size: 100% 2px;
+}
+
+.K-Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 71.11%;
+  height: auto;
+  margin: 33px auto 33px auto;
+}
+.K-Skills__article {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  width: 100%;
+  height: min-content;
+  margin-bottom: 33px;
+}
+.K-Skills__article__statement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.15%;
+  height: 47px;
+  border-radius: 5px;
+  background-color: #FF6060;
+}
+.K-Skills__article__statement h3 {
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 1.68vw;
+  font-weight: 500;
+  line-height: 34.22px;
+}
+.K-Skills__article p {
+  padding: 22px;
+  text-align: left;
+  color: #FF6060;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.68vw;
+  line-height: 142.6%;
 }
 
 /*# sourceMappingURL=index.css.map */

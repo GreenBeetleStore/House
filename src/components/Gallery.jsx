@@ -6,8 +6,8 @@ import saloon from '../assets/images/sejour.webp'
 const Gallery = () => {
    return (
       <section className="K-Gallery">
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -16,10 +16,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+            </a>
+         </article>
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -28,10 +28,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+            </a>
+         </article>
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -40,10 +40,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+            </a>
+         </article>
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -52,10 +52,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+            </a>
+         </article>
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -64,10 +64,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
-         <a href="../pages/Card">
-            <article className="K-Gallery__article article">
+            </a>
+         </article>
+         <article className="K-Gallery__article article">
+            <a href="../pages/Card">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -76,8 +76,8 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </article>
-         </a>
+            </a>
+         </article>
       </section>
    )
 }

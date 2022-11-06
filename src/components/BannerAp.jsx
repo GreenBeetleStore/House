@@ -1,4 +1,4 @@
-/* Banner 🎏 src/components/Banner.jsx */
+/* BannerAp 🎏 src/components/BannerAp.jsx */
 
 import React from 'react'
 import aboutBanner from '../assets/images/banner02.webp'

@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom'
 const Header = () => {
    return (
       <header className="K-header">
-         <a href="../pages/Home">
+         {/* <a href="../pages/Home"> */}
+         <Link to="/">
             <img src={logo} className="K-header__logo" alt="logo" />
-         </a>
+            {/* </a> */}
+         </Link>
          <nav className="K-header__menu">
             <ul className="K-header__menu__ul">
                <li className="K-header__menu__ul__li">
@@ -18,7 +20,7 @@ const Header = () => {
                </li>
                <li className="K-header__menu__ul__li">
                   {/* <a href="../pages/About.jsx">A Propos</a> */}
-                  <Link to="/About">A propos</Link>
+                  <Link to="/about">A propos</Link>
                </li>
             </ul>
          </nav>

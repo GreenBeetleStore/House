@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* main · src/sass/main.scss
-   Els porcentatges d'amplades son calculats segons el body amb un viewport-width de 1440px.
-   L'amplada màxima del Parent de 1240px, al descomptar el padding: 0 6.94%; del body; 
+   Els porcentatges d'amplades són calculats segons el body amb un viewport-width de 1440px.
+   L'amplada màxima del Parent és de 1240px, al descomptar el padding: 0 6.94%; del body; 
 */
 /* banner 🎏 src/sass/layouts/_banner.scss */
 .K-Banner {
@@ -40,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,6 +55,15 @@ code {
   width: 100%; /* 1240px */
 }
 
+/* carousel 🎠 src/sass/layouts/_carousel.scss */
+.K-Sheet__carousel {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  mix-blend-mode: normal;
+}
+
 /* Error 🐛 src/sass/layouts/_error.scss */
 .K-Error {
   display: flex;
@@ -67,7 +76,7 @@ code {
   align-items: center;
   text-align: right;
   width: 48.15%;
-  height: fit-content;
+  height: max-content;
   font-size: 20.16vw;
   font-weight: 700;
   line-height: 410.69px;
@@ -274,6 +283,13 @@ a:focus {
   font-weight: 400;
   font-size: 1.68vw;
   line-height: 142.6%;
+}
+
+/* sheet 🈴 src/sass/layouts/_sheet.scss */
+.K-Sheet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

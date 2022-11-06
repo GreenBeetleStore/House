@@ -1,13 +1,14 @@
 /* Gallery 🍱 src/components/Gallery.jsx */
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import saloon from '../assets/images/sejour.webp'
 
 const Gallery = () => {
    return (
       <section className="K-Gallery">
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -16,10 +17,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -28,10 +29,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -40,10 +41,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -52,10 +53,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -64,10 +65,10 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
          <article className="K-Gallery__article article">
-            <a href="../pages/Card">
+            <Link to="/sheet">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -76,7 +77,7 @@ const Gallery = () => {
                <span className="K-Gallery__article__title article__title">
                   Titre de la location
                </span>
-            </a>
+            </Link>
          </article>
       </section>
    )

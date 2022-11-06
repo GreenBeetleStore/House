@@ -1,6 +1,6 @@
 /* main · src/sass/main.scss
-   Els porcentatges d'amplades son calculats segons el body amb un viewport-width de 1440px.
-   L'amplada màxima del Parent de 1240px, al descomptar el padding: 0 6.94%; del body; 
+   Els porcentatges d'amplades són calculats segons el body amb un viewport-width de 1440px.
+   L'amplada màxima del Parent és de 1240px, al descomptar el padding: 0 6.94%; del body; 
 */
 
 // Taula d'importacions, guia de referència.
@@ -15,12 +15,11 @@
 // @import "./layouts/apartList";
 @import './layouts/banner';
 @import './layouts/base';
+@import './layouts/carousel';
 @import './layouts/error';
 @import './layouts/footer';
 @import './layouts/gallery';
 @import './layouts/header';
 @import './layouts/skills';
 // @import "./layouts/form";
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
+@import './pages/sheet';

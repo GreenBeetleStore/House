@@ -42,7 +42,8 @@
       transition: background-size 0.3s;
    }
 
-   > a:hover, a:focus {
+   > a:hover,
+   a:focus {
       background-size: 100% 2px;
    }
 }

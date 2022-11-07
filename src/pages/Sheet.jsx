@@ -9,8 +9,8 @@ const Sheet = () => {
    return (
       <section className="K-Sheet">
          <Carousel />
-         
-         <div className="K-Sheet__keywords k-keywords"> 
+
+         <div className="K-Sheet__keywords k-keywords">
             <div className="K-Sheet__keywords__leftBox k-leftBox">
                <div className="K-Sheet__keywords__leftBox__title k-title">
                   <h2>Cozy loft on the Canal Saint-Martin</h2>
@@ -32,12 +32,11 @@ const Sheet = () => {
                   <div className="K-Sheet__keywords__rightBox__thumbnail k-thumbnail"></div>
                </div>
                <div className="K-Sheet__keywords__rightBox__starScore">
-                  <img src={Star} alt="étoile"/>
-                  <img src={Star} alt="étoile"/>
-                  <img src={Star} alt="étoile"/>
-                  <img src={Star} alt="étoile" background='$colorEstrella' />
-                  <img src={Star} alt="étoile"/>
-                  
+                  <img src={Star} alt="étoile" />
+                  <img src={Star} alt="étoile" />
+                  <img src={Star} alt="étoile" />
+                  <img src={Star} alt="étoile" background="$colorEstrella" />
+                  <img src={Star} alt="étoile" />
                </div>
             </div>
          </div>

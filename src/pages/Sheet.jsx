@@ -9,7 +9,8 @@ const Sheet = () => {
    return (
       <section className="K-Sheet">
          <Carousel />
-         <div className="K-Sheet__keywords k-keywords">
+         
+         <div className="K-Sheet__keywords k-keywords"> 
             <div className="K-Sheet__keywords__leftBox k-leftBox">
                <div className="K-Sheet__keywords__leftBox__title k-title">
                   <h2>Cozy loft on the Canal Saint-Martin</h2>
@@ -40,6 +41,7 @@ const Sheet = () => {
                </div>
             </div>
          </div>
+
          <div className="K-Sheet__info k-info">
             <div className="K-Sheet__info__article">
                <div className="K-Sheet__info__article__tab">

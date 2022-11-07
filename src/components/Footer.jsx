@@ -2,17 +2,18 @@
 
 import React from 'react'
 import logoB from '../assets/images/logoB.png'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
    return (
       <footer className="K-Footer">
-         <a href="../pages/Home">
+         <Link to="/">
             <img
                className="K-Footer__logo"
                src={logoB}
                alt="Logo de l'immobilier Kasa"
             />
-         </a>
+         </Link>
          <h3 className="K-Footer__copyright">
             © 2020 Kasa. All rights reserved
          </h3>

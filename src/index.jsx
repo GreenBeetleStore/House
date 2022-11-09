@@ -20,7 +20,7 @@ ReactDOM.render(
          <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/sheet" element={<Sheet />} />
+            <Route path="/sheet/:_id" element={<Sheet />} />
             <Route path="/property" element={<Property />} />
             <Route path="*" element={<Error />} />
          </Routes>

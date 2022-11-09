@@ -2,87 +2,26 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
-
-import saloon from '../assets/images/sejour.webp'
+import logements from '../mocks/logements.json'
 
 const Gallery = () => {
-   return (
-      <section className="K-Gallery">
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-         <article className="K-Gallery__article article">
-            <Link to="/property">
-               <img
-                  className="K-Gallery__article__apartImage article__apartImage"
-                  src={saloon}
-                  alt="Intérieur d'appartement"
-               />
-               <span className="K-Gallery__article__title article__title">
-                  Titre de la location
-               </span>
-            </Link>
-         </article>
-      </section>
-   )
+   const appartements = logements.map((logement) => (
+      <article className="K-Gallery__article article">
+         <Link to={`/sheet/${logement.id}`}>
+            <img
+               className="K-Gallery__article__apartImage article__apartImage"
+               src={logement.cover}
+               alt="Intérieur d'appartement"
+            />
+            <div className='K-Gallery__article__mask'></div>
+            <span className="K-Gallery__article__title article__title">
+               {logement.title}
+            </span>
+         </Link>
+      </article>
+   ))
+
+   return <section className="K-Gallery">{appartements}</section>
 }
 
 export default Gallery

@@ -6,30 +6,48 @@
    align-content: space-around;
    flex-wrap: wrap;
    background-color: $colorFitxes;
-   margin: 46px 6.94%;
-   width: 1240px;
-   height: 829px;
+   max-width: 86.11%;   // 1240px = 86.11%
+   height: max-content;
+   margin: 43px 6.94%;     // 6.94% = 100px
+   padding: 56px 3.47%;
+   column-gap: 60px;
+   row-gap: 50px;
    border-radius: 25px;
 
    &__article {
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
+      width: 340px;
+      height: 340px;
       border-radius: 10px;
-
+      background-color: $colorPrimari;
+      
       & a {
          text-decoration: none;
       }
 
       & img {
+         display: flex;
+         width: 340px;
+         height: 340px;
+         border-radius: 10px;       
+         object-fit: cover;
+      }
+
+      &__mask {
+         display: flex;
          width: 340px;
          height: 340px;
          border-radius: 10px;
-         background: $colorPrimari;
+         margin-top: -340px;
+         background: linear-gradient(180deg, #FFFFFF 0%, #000000 50%);
+         opacity: 0.3;
       }
 
       &__title {
          display: flex;
+         position: absolute;
          width: 300px;
          height: 52px;
          font-family: 'Montserrat', sans-serif;
@@ -40,7 +58,7 @@
          color: $colorSecundari;
          margin-top: -75px;
          margin-left: 20px;
-         outline: 1px solid blueviolet;
+         z-index: 1;
       }
    }
 }

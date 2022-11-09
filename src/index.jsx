@@ -10,7 +10,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
 import Sheet from './pages/Sheet'
-import Property from './pages/Property'
 
 
 ReactDOM.render(
@@ -21,7 +20,6 @@ ReactDOM.render(
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/sheet/:_id" element={<Sheet />} />
-            <Route path="/property" element={<Property />} />
             <Route path="*" element={<Error />} />
          </Routes>
          <Footer />

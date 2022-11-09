@@ -8,7 +8,7 @@ const Gallery = () => {
    return (
       <section className="K-Gallery">
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -20,7 +20,7 @@ const Gallery = () => {
             </Link>
          </article>
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -32,7 +32,7 @@ const Gallery = () => {
             </Link>
          </article>
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -44,7 +44,7 @@ const Gallery = () => {
             </Link>
          </article>
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -56,7 +56,7 @@ const Gallery = () => {
             </Link>
          </article>
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}
@@ -68,7 +68,7 @@ const Gallery = () => {
             </Link>
          </article>
          <article className="K-Gallery__article article">
-            <Link to="/sheet">
+            <Link to="/property">
                <img
                   className="K-Gallery__article__apartImage article__apartImage"
                   src={saloon}

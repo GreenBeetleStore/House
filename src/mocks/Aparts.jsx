@@ -1,6 +1,6 @@
-// apartList 💾 // src/mocks/apartList.jsx
+// Aparts 💾 // src/mocks/Aparts.jsx
 
-export const apartList = [
+const Aparts = [
    {
       id: 'c67ab8a7',
       title: 'Appartement cosy',
@@ -561,3 +561,5 @@ export const apartList = [
       tags: ['Louvre', 'Marais', 'Rivoli'],
    },
 ]
+
+module.exports = Aparts

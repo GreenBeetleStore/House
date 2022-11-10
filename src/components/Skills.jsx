@@ -18,16 +18,14 @@ const Skills = () => {
          <div className="K-Skills__article__statement" onClick={triggerStatus}>
             <h3>{trait.titleTrait}</h3>
             {trigger ? (
-               <img src={ArrowUp} alt="Flèche" />
+               <img src={ArrowUp} alt="Flèche en haut" />
             ) : (
-               <img src={ArrowDown} alt="Flèche" />
+               <img src={ArrowDown} alt="Flèche en bas" />
             )}
          </div>
-         {trigger && (
-            <div className="K-Skills__article__info">
-               <p>{trait.skillTrait}</p>
-            </div>
-         )}
+         <div className="K-Skills__article__info">
+            {trigger && <p>{trait.skillTrait}</p>}
+         </div>
       </article>
    ))
    return <section className="K-Skills">{traitsAbout}</section>

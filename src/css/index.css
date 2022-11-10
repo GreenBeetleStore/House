@@ -322,6 +322,10 @@ a:focus {
   font-weight: 500;
   line-height: 34.22px;
 }
+.K-Skills__article__statement img {
+  width: 1.68vw;
+  height: 1.68vw;
+}
 .K-Skills__article p {
   padding: 22px;
   text-align: left;

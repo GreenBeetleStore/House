@@ -16,18 +16,20 @@
 
    &__arrowLeft {
       display: flex;
-      position: absolute;
+      position: relative;
       left: 196px;
       width: 46.68px;
       height: 79.2px;
+      outline: 1px solid red ;
    }
 
    &__arrowRight {
       position: absolute;
+      left: 1342px;
       width: 46.68px;
       height: 79.2px;
-      left: 1342px;
       top: 335px;
+      outline: 1px solid red ;
    }
 
    &__pageNumber {

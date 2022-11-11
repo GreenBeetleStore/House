@@ -2,64 +2,63 @@
 
 import React from 'react'
 import { useState } from 'react'
+import { useParams } from 'react-router-dom'
+import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
-const Carousel = ({ slides }) => {
+const Carousel = () => {
+   const { id } = useParams()
+   const { pictures } = logements.find((loge) => loge.id === id)
    const [expose, isExpose] = useState(0)
-   const length = slides.length
+   // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {
-      isExpose(expose === length - 1 ? 0 : expose + 1)
+      isExpose(expose === pictures.length - 1 ? 0 : expose + 1)
    }
+   // Si és a la primera posició passa a la última, sinó passa a l'anterior.
    const previousPicture = () => {
-      isExpose(expose === 0 ? length - 1 : expose - 1)
+      isExpose(expose === 0 ? pictures.length - 1 : expose - 1)
    }
+
    return (
-      <div className="K-Sheet__carousel k-carousel">
-         {slides.map((picture, index) => {
+      <section className="K-Sheet__carousel k-carousel">
+         {/* Mostra les fletxes sempre que hi hagin més d'una imatge */}
+         {pictures.length > 1 && (
+            <img
+               className="K-Sheet__carousel__arrowLeft"
+               src={ArrowLeft}
+               alt="flèche gauche"
+               onClick={previousPicture}
+            />
+         )}
+         {pictures.length > 1 && (
+            <img
+               className="K-Sheet__carousel__arrowRight"
+               src={ArrowRight}
+               alt="flèche droite"
+               onClick={nextPicture}
+            />
+         )}
+
+         {pictures.map((picture, index) => {
             return (
-               <div
-                  key={index}
-                  className={
-                     index === expose
-                        ? 'slide slider__pictureIn'
-                        : 'slide slider__pictureOut'
-                  }
-               >
+               <div key={index}>
                   {index === expose && (
                      <img
                         src={picture}
-                        alt=""
+                        alt={pictures.title}
                         className="K-Sheet__carousel__picture k-carousel__picture"
                      />
+                  )}
+                  {index === expose && (
+                     <span className="K-Sheet__carousel__picture--number k-carousel__picture--number">
+                        {expose + 1}/{pictures.length}
+                     </span>
                   )}
                </div>
             )
          })}
-         {length > 1 ? (
-            <div>
-               <div
-                  className="K-Sheet__carousel__left"
-                  onClick={previousPicture}
-               >
-                  <img
-                     className="K-Sheet__carousel__arrowLeft"
-                     src={ArrowLeft}
-                     alt="flèche gauche"
-                  />
-               </div>
-               <div className="K-Sheet__carousel__right" onClick={nextPicture}>
-                  <img
-                     className="K-Sheet__carousel__arrowRight"
-                     src={ArrowRight}
-                     alt="flèche droite"
-                  />
-               </div>
-
-               <p className="K-Sheet__carousel__pageNumber">1/4</p>
-            </div>
-         ) : null}
-      </div>
+      </section>
    )
 }
 

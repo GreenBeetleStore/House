@@ -1,10 +1,10 @@
-// ApartScore ⭐ src/components/ApartScore.jsx
+// Score ⭐ src/components/Score.jsx
 
 import React from 'react'
 import '../css/index.css'
 import Star from '../assets/icons/star.svg'
 
-function ApartScore () {
+function Score () {
    const rating = [1, 2, 3, 4, 5]
    const scaleRate = <img src={Star} alt='star-icon' className='starRating' />
    
@@ -19,4 +19,4 @@ function ApartScore () {
    )
 }
 
-export default ApartScore
+export default Score

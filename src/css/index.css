@@ -89,6 +89,8 @@ code {
   display: flex;
   position: absolute;
   mix-blend-mode: normal;
+  width: 1140px;
+  z-index: -3;
 }
 .K-Sheet__carousel__pageNumber {
   position: absolute;

@@ -44,11 +44,11 @@ const Carousel = () => {
             />
          </div>
          <>
-         <img
-            src={ Photo }
-            alt="foto apart"
-            className="K-Sheet__carousel__picture k-carousel__picture"
-         />
+            <img
+               src={Photo}
+               alt="foto apart"
+               className="K-Sheet__carousel__picture k-carousel__picture"
+            />
          </>
       </section>
    )

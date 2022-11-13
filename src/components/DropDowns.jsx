@@ -1,7 +1,6 @@
 /* DropDowns 🏹 src/components/DropDowns.jsx */
 
-import React from 'react'
-import { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import ArrowUp from '../assets/icons/arrowUp.svg'
 import ArrowDown from '../assets/icons/arrowDown.svg'
 
@@ -14,9 +13,9 @@ const DropDowns = () => {
       <article className="K-Skills__article">
          <div className="K-Skills__article__statement" onClick={triggerStatus}>
             {trigger ? (
-               <img src={ArrowUp} alt="Flèche" />
+               <img src={ArrowUp} alt="FlècheHaut" />
             ) : (
-               <img src={ArrowDown} alt="Flèche" />
+               <img src={ArrowDown} alt="FlècheBas" />
             )}
          </div>
          {trigger && <div className="K-Skills__article__info"></div>}

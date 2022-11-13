@@ -6,13 +6,15 @@ const FitxaSheet = () => {
    return (
       <div>
          <div className="K-Sheet__keywords k-keywords">
-            <div className="K-Sheet__keywords__leftBox k-leftBox">
+
+            {/* <div className="K-Sheet__keywords__leftBox k-leftBox">
                <div className="K-Sheet__keywords__leftBox__title k-title">
                   <h2>Cozy loft on the Canal Saint-Martin</h2>
                </div>
                <div className="K-Sheet__keywords__leftBox__region k-region">
                   <p>Paris, Île-de-France</p>
                </div>
+
                <div className="K-Sheet__keywords__leftBox__labels k-labels">
                   <ul className="K-Sheet__keywords__leftBox__labels--list">
                      <li>Cozy</li>
@@ -20,8 +22,9 @@ const FitxaSheet = () => {
                      <li>Paris 10</li>
                   </ul>
                </div>
-            </div>
-            <div className="K-Sheet__keywords__rightBox k-rightBox">
+            </div> */}
+
+            {/* <div className="K-Sheet__keywords__rightBox k-rightBox">
                <div className="K-Sheet__keywords__rightBox__owner k-owner">
                   <p>Alexandre Dumas</p>
                   <div className="K-Sheet__keywords__rightBox__thumbnail k-thumbnail"></div>
@@ -33,7 +36,8 @@ const FitxaSheet = () => {
                   <img src={Star} alt="étoile" background="$colorEstrella" />
                   <img src={Star} alt="étoile" />
                </div>
-            </div>
+            </div> */}
+            
          </div>
 
          <div className="K-Sheet__info k-info">

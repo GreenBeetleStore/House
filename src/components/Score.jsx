@@ -1,19 +1,21 @@
 // Score ⭐ src/components/Score.jsx
 
 import React from 'react'
-import '../css/index.css'
 import Star from '../assets/icons/star.svg'
+import StarGrey from '../assets/icons/star-1.svg'
 
-function Score () {
-   const rating = [1, 2, 3, 4, 5]
-   const scaleRate = <img src={Star} alt='star-icon' className='starRating' />
+const Score = ({ rating }) => {
+   const stars = [1, 2, 3, 4, 5]
+   
    
    return (
-      <div>
-         {rating.map((ratingElem) =>
-            scaleRate >= ratingElem ? (
-               <span key={ratingElem.toString()}>{Star}</span>
-            ) : null
+      <div className="K-Sheet__keywords__rightBox__starScore k-starScore">
+         {stars.map((star) => 
+         rating >= star ? (
+            <img key={star.toString()} src={Star} alt="gold star" className='k-starScore__star' />
+         ) : (
+            <img key={star.toString()} src={StarGrey} alt="gold star" className='k-starScore__star' />
+         )
          )}
       </div>
    )

@@ -8,8 +8,7 @@ import Tags from '../components/Tags'
 const LeftBox = () => {
    const { logementId } = useParams()
    const logement = logements.find((logement) => logement.id === logementId)
-   const { title, location } =
-      logement
+   const { title, location } = logement
 
    return (
             <div className="K-Sheet__keywords__leftBox k-leftBox">

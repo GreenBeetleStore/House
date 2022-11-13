@@ -6,7 +6,7 @@ import logements from '../mocks/logements.json'
 
 const Gallery = () => {
    const appartements = logements.map((logement) => (
-      <article className="K-Gallery__article article">
+      <article key={logement.id}  className="K-Gallery__article article">
          <Link to={`/sheet/${logement.id}`}>
             <img
                className="K-Gallery__article__apartImage article__apartImage"

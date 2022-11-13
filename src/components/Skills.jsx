@@ -1,8 +1,7 @@
 /* Skills 🎭 src/components/Skills.jsx */
 
-import React from 'react'
+import React, { useState } from 'react'
 import traits from '../mocks/traits.json'
-import { useState } from 'react'
 import ArrowUp from '../assets/icons/arrowUp.svg'
 import ArrowDown from '../assets/icons/arrowDown.svg'
 

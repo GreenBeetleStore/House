@@ -1,29 +1,15 @@
 /* Sheet 🈴 src/pages/Sheet.jsx*/
 
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import logements from '../mocks/logements.json'
 import Carousel from '../components/Carousel'
 import LeftBox from '../components/LeftBox'
 import RightBox from '../components/RightBox'
+import InfoSheet from '../components/InfoSheet'
 
-const Sheet = () => {
-   const { logementId } = useParams()
-   const logement = logements.find((logement) => logement.id === logementId)
-   const {
-      title,
-      pictures,
-      description,
-      host,
-      rating,
-      location,
-      equipments,
-   } = logement
-
+function Sheet() {
    return (
-      <section className="K-Sheet">
-
-         <Carousel photos={pictures} />
+      <div className="K-Sheet">
+         <Carousel />
 
          <div className="K-Sheet__keywords k-keywords">
             <LeftBox />
@@ -31,12 +17,9 @@ const Sheet = () => {
          </div>
 
          <div className="K-Sheet__info k-info">
-            
+            <InfoSheet />
          </div>
-
-         
-
-      </section>
+      </div>
    )
 }
 

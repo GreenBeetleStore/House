@@ -1,19 +1,20 @@
 /* Carousel 🎠 src/components/Carousel.jsx */
 
 import React, { useState } from 'react'
-// import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
-import Photo from '../assets/images/Background.png'  // Foto temporal a esborrar.
+const Carousel = () => {
 
-const Carousel = ({photos}) => {
+   const { logementId } = useParams("id")
+   const pictures = logements.find((picture) => picture.id === logementId)
    
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
    // Longitud de l'array.
-   const length = photos.length   
+   const length = pictures.length   
 
    // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {
@@ -26,7 +27,7 @@ const Carousel = ({photos}) => {
 
    return (
       <section className="K-Sheet__carousel k-carousel">
-         {photos.map((picture, index) => {
+         {pictures.map((picture, index) => {
             return (
                <div key={index} className={
                   index === expose

@@ -41,6 +41,7 @@ const FitxaSheet = () => {
          </div>
 
          <div className="K-Sheet__info k-info">
+
             <div className="K-Sheet__info__article">
                <div className="K-Sheet__info__article__tab">
                   <h4>Description</h4>
@@ -57,6 +58,7 @@ const FitxaSheet = () => {
                   </p>
                </div>
             </div>
+
             <div className="K-Sheet__info__article">
                <div className="K-Sheet__info__article__tab">
                   <h4>Équipements</h4>
@@ -80,6 +82,7 @@ const FitxaSheet = () => {
                   </p>
                </div>
             </div>
+            
          </div>
       </div>
    )

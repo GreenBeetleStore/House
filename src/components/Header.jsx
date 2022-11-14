@@ -16,7 +16,7 @@ const Header = () => {
                   <Link to="/">Accueil</Link>
                </li>
                <li className="K-header__menu__ul__li">
-                  <Link to="/about">A propos</Link>
+                  <Link to="/about">A Propos</Link>
                </li>
             </ul>
          </nav>

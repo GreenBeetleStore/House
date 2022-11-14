@@ -1,7 +1,7 @@
 /* Carousel 🎠 src/components/Carousel.jsx */
 
 import React, { useState } from 'react'
-// import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
@@ -9,6 +9,8 @@ import ArrowLeft from '../assets/icons/arrowLeft.svg'
 const Carousel = () => {
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
+
+   const { logements } = useParams()
 
    // Longitud de l'array.
    const length = logements.length

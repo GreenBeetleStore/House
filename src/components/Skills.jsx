@@ -6,7 +6,7 @@ import ArrowUp from '../assets/icons/arrowUp.svg'
 import ArrowDown from '../assets/icons/arrowDown.svg'
 
 const Skills = () => {
-   /* DropDown 🏹*/
+   /* DropDown 🏹 Disparador */
    const [trigger, isTrigger] = useState(false)
    const triggerStatus = () => {
       isTrigger(!trigger)

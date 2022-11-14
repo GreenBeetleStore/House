@@ -8,7 +8,7 @@ import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
 const Carousel = () => {
 
-   const { logementId } = useParams("id")
+   const { logementId } = useParams()
    const pictures = logements.find((picture) => picture.id === logementId)
    
    // Modificador d'estat.

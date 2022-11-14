@@ -36,19 +36,19 @@
       display: flex;
       position: absolute;
       mix-blend-mode: normal;
-      width: 1140px;
+      max-width: 86.11%;      // 1240px
       z-index: -3;
-      
    }
 
    &__pageNumber {
       position: absolute;
-      top: 496px;
+      top: 500px;
       font-size: 1.26vw; // 18px
       font-weight: 500;
       font-style: normal;
       line-height: 142.6%; // 26px
       color: $colorSecundari;
+      z-index: 1;
       outline: 1px solid orange;
    }
 }

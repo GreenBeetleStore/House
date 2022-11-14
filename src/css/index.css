@@ -89,17 +89,18 @@ code {
   display: flex;
   position: absolute;
   mix-blend-mode: normal;
-  width: 1140px;
+  max-width: 86.11%;
   z-index: -3;
 }
 .K-Sheet__carousel__pageNumber {
   position: absolute;
-  top: 496px;
+  top: 500px;
   font-size: 1.26vw;
   font-weight: 500;
   font-style: normal;
   line-height: 142.6%;
   color: #FFFFFF;
+  z-index: 1;
   outline: 1px solid orange;
 }
 

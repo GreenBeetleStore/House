@@ -6,22 +6,23 @@ import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
-const Carousel = () => {
+
+const Carousel = ({ imgurl }) => {
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
 
-   const { logements } = useParams()
+  
 
    // Longitud de l'array.
    const length = logements.length
 
    // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {
-      isExpose(expose === length - 1 ? 0 : expose + 1)
+      isExpose(expose === imgurl.length - 1 ? 0 : expose + 1)
    }
    // Si és a la primera posició passa a la última, sinó passa a l'anterior.
    const previousPicture = () => {
-      isExpose(expose === 0 ? length - 1 : expose - 1)
+      isExpose(expose === 0 ? imgurl.length - 1 : expose - 1)
    }
 
    const apartments = logements.map((picture) => (

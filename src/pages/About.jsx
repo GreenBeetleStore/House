@@ -2,7 +2,7 @@
 
 import React from 'react'
 import BannerAp from '../components/BannerAp'
-import Skills from '../components/Skills'
+import Skills from '../components/SkillsAntic'
 
 function About() {
    return (

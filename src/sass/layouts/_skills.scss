@@ -4,16 +4,17 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 71.11%; // 1024px
+   width: 86.11%; // 1240px
    height: auto;
    margin: 33px auto 33px auto;
 
    &__article {
       display: flex;
       flex-direction: column;
+      align-items: center;
       background-color: $colorFitxes;
       border-radius: 5px;
-      width: 100%; // 1024px
+      width: 82.5%; // 1023px
       height: min-content;
       margin-bottom: 33px;
 
@@ -22,6 +23,7 @@
          justify-content: space-between;
          align-items: center;
          padding: 0 2.15%; // 22px
+         width: 95.6%;
          height: 47px;
          border-radius: 5px;
          background-color: $colorPrimari;

@@ -6,68 +6,56 @@ import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
-
 const Carousel = ({ imgurl }) => {
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
 
-  
+   const { logement } = useParams()
 
    // Longitud de l'array.
-   const length = logements.length
+   const length = logement.length
 
    // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {
-      isExpose(expose === imgurl.length - 1 ? 0 : expose + 1)
+      const lastPicture = expose === imgurl.length - 1
+      const newIndex = lastPicture ? 0 : expose + 1
+      isExpose(newIndex)
    }
    // Si és a la primera posició passa a la última, sinó passa a l'anterior.
    const previousPicture = () => {
-      isExpose(expose === 0 ? imgurl.length - 1 : expose - 1)
+      const firstPicture = expose === 0
+      const newIndex = firstPicture ? imgurl.length - 1 : expose - 1
+      isExpose(newIndex)
    }
 
-   const apartments = logements.map((picture) => (
-      <>
-         {picture.map((picture, index) => {
-            return (
-               <div
-                  key={index}
-                  className={
-                     index === expose
-                        ? 'K-Sheet__carousel__photoIn k-carousel__photoIn'
-                        : 'K-Sheet__carousel__photoOut k-carousel__photoOut'
-                  }
-               >
-                  {index === expose && (
-                     <img
-                        src={picture}
-                        alt=""
-                        className="K-Sheet__carousel__photo k-carousel__photo"
-                     />
-                  )}
-               </div>
-            )
-         })}
-         {length > 1 ? (
-            <div className="K-Sheet__carousel__arrows k-arrows">
-               <img
-                  className="K-Sheet__carousel__arrows__arrowLeft k-carousel__arrowLeft"
-                  src={ArrowLeft}
-                  alt="flèche gauche"
-                  onClick={previousPicture}
-               />
-               <img
-                  className="K-Sheet__carousel__arrows__arrowRight k-carousel__arrowRight"
-                  src={ArrowRight}
-                  alt="flèche droite"
-                  onClick={nextPicture}
-               />
-            </div>
-         ) : null}
-      </>
-   ))
-
    return (
-      <section className="K-Sheet__carousel k-carousel">{apartments}</section>
+      <section className="K-Sheet__carousel k-carousel">
+         <div
+            className="K-Sheet__carousel__photo k-carousel__photo"
+            style={{ picture: `url(${imgurl[expose]})` }}
+         >
+            <div
+               className="K-Sheet__carousel__arrows k-arrows"
+               style={imgurl.length === 1 ? { visibility: 'hidden' } : {}}
+            >
+               <div
+                  className="K-Sheet__carousel__arrows__arrowLeft k-carousel__arrowLeft"
+                  onClick={previousPicture}
+               >
+                  <img src={ArrowLeft} alt="flèche gauche" />
+               </div>
+               <div
+                  className="K-Sheet__carousel__arrows__arrowRight k-carousel__arrowRight"
+                  onClick={nextPicture}
+               >
+                  <img src={ArrowRight} alt="flèche droite" />
+               </div>
+            </div>
+            <p className="K-Sheet__carousel__pageNumber k-carousel__pageNumber">
+               {expose + 1}/{imgurl.length}
+            </p>
+         </div>
+      </section>
    )
 }
 

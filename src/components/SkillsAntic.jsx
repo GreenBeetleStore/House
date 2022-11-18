@@ -13,13 +13,13 @@ const Skills = () => {
    }
 
    const traitsAbout = traits.map((trait) => (
-      <article className="K-Skills__article">
+      <article className="K-Skills__article" onClick={triggerStatus}>
          <div className="K-Skills__article__statement" >
             <h3>{trait.titleTrait}</h3>
             {trigger ? (
-               <img src={ArrowUp} alt="Flèche en haut" onClick={triggerStatus}/>
+               <img src={ArrowUp} alt="Flèche en haut" />
             ) : (
-               <img src={ArrowDown} alt="Flèche en bas" onClick={triggerStatus}/>
+               <img src={ArrowDown} alt="Flèche en bas" />
             )}
          </div>
          <div className="K-Skills__article__info">

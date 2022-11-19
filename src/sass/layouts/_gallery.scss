@@ -7,7 +7,7 @@
    height: max-content;
    border-radius: 25px;
    margin: 43px 6.94%;     // 6.94% = 100px
-   padding: 56px 3.47%;
+   padding: 56px 3.47%;    // 4.03% = 50px
 
    & > ul {
       display: flex;
@@ -15,7 +15,7 @@
       justify-content: space-between;
       align-items: center;
       margin: 0 0 0 -45px;
-      column-gap: 60px;
+      column-gap: 3%;      // 60px;
       row-gap: 50px;
    }
 

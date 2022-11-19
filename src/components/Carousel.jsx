@@ -6,14 +6,19 @@ import logements from '../mocks/logements.json'
 import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
+console.log(logements)
+
 const Carousel = ({ imgurl }) => {
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
 
-   const { logement } = useParams()
+   // Captura l'id de l'url.
+   const id = useParams()
+   console.log(id)
 
-   // Longitud de l'array.
-   const length = logement.length
+   // Trobar les imatges dins de logement.json.
+   const { picture } = logements.map((picture) => picture.id === id)
+   console.log({picture})
 
    // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {

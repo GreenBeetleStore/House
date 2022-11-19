@@ -191,7 +191,7 @@ code {
   justify-content: space-between;
   align-items: center;
   margin: 0 0 0 -45px;
-  column-gap: 60px;
+  column-gap: 3%;
   row-gap: 50px;
 }
 .K-Gallery__article {

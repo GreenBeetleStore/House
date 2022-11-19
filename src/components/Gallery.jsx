@@ -6,7 +6,7 @@ import Card from '../components/Card'
 
 const Gallery = () => {
    return (
-      <section className='K-Gallery'>
+      <section className="K-Gallery">
          <ul>
             {logements.map((logement) => (
                <Card key={logement.id} logement={logement} />

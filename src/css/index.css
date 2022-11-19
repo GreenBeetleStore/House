@@ -178,17 +178,21 @@ code {
 /* gallery 🍱 src/sass/layouts/_gallery.scss */
 .K-Gallery {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
   background-color: #F6F6F6;
   max-width: 86.11%;
   height: max-content;
+  border-radius: 25px;
   margin: 43px 6.94%;
   padding: 56px 3.47%;
+}
+.K-Gallery > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 -45px;
   column-gap: 60px;
   row-gap: 50px;
-  border-radius: 25px;
 }
 .K-Gallery__article {
   display: flex;

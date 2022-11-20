@@ -12,18 +12,19 @@ const CarouselB = () => {
    // Captura de l'id a l'URL.
    const { id } = useParams()
 
-   const { pictures } = logements.map((picture) => picture.id === id)
+   const imgurl = logements.map((imgurl) => imgurl.id === id)
+   // const traitsAbout = traits.map((trait) => (
 
    // Modificador d'estat.
    const [expose, isExpose] = useState(0)
 
    // Si és la última foto -1 passa a la primera 0, sinó passa a la següent +1.
    const nextPicture = () => {
-      isExpose(expose === pictures.length - 1 ? 0 : expose + 1)
+      isExpose(expose === imgurl.length - 1 ? 0 : expose + 1)
    }
    // Si és a la primera posició passa a la última, sinó passa a l'anterior.
    const previousPicture = () => {
-      isExpose(expose === 0 ? pictures.length - 1 : expose - 1)
+      isExpose(expose === 0 ? imgurl.length - 1 : expose - 1)
    }
 
    return (
@@ -43,14 +44,14 @@ const CarouselB = () => {
             />
          </div>
          <>
-            <img
-               src={logements.picture}
+            <img key={imgurl.id}
+               src={logements.pictures}
                alt="foto apart"
                className="K-Sheet__carousel__picture k-carousel__picture"
             />
          </>
          <p className="K-Sheet__carousel__picture--number pictureNumber">
-            {/* {expose + 1}/{pictures.length} */}
+            {expose + 1}/{imgurl.length}
          </p>
       </section>
    )

@@ -2,6 +2,7 @@ import React from 'react'
 import ArrowUp from '../assets/icons/arrowUp.svg'
 import Star from '../assets/icons/star.svg'
 
+// Fitxer COMODIN només d'estructura.
 const FitxaSheet = () => {
    return (
       <div>

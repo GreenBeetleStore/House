@@ -1,7 +1,7 @@
 /* Sheet 🈴 src/pages/Sheet.jsx*/
 
 import React from 'react'
-import CarouselB from '../components/CarouselContorns'
+import CarouselB from '../components/CarouselB'
 import LeftBox from '../components/LeftBox'
 import RightBox from '../components/RightBox'
 import InfoSheet from '../components/InfoSheet'

@@ -311,7 +311,6 @@ a:focus {
   width: 86.11%;
   height: auto;
   margin: 33px auto 33px auto;
-  outline: 1px solid blueviolet;
 }
 .K-Skills__article {
   display: flex;
@@ -320,31 +319,36 @@ a:focus {
   background-color: #FF6060;
   border-radius: 5px;
   width: 82.5%;
-  height: min-content;
+  height: 47px;
   margin: auto;
+  z-index: 1;
 }
 .K-Skills__article h3 {
-  color: red;
+  color: #FFFFFF;
   text-align: left;
   font-size: 1.68vw;
   font-weight: 500;
   line-height: 34.22px;
   margin-left: 18px;
-  outline: 1px solid red;
 }
 .K-Skills__article img {
   width: 1.68vw;
   height: 1.68vw;
   margin-right: 16px;
 }
-.K-Skills p {
-  padding: 22px;
+.K-Skills__info {
+  width: 79.4%;
+  height: min-content;
+  margin: -8px auto 0 auto;
+  padding: 22px 18px;
   text-align: left;
   color: #FF6060;
   font-style: normal;
   font-weight: 400;
   font-size: 1.68vw;
   line-height: 142.6%;
+  background-color: #F6F6F6;
+  border-radius: 5px;
 }
 
 /* sheet 🈴 src/sass/layouts/_sheet.scss */

@@ -7,7 +7,6 @@
    width: 86.11%; // 1240px
    height: auto;
    margin: 33px auto 33px auto;
-   outline: 1px solid blueviolet;
 
    &__article {
       display: flex;
@@ -16,16 +15,16 @@
       background-color: $colorPrimari;
       border-radius: 5px;
       width: 82.5%;     // 1023px;
-      height: min-content;
+      height: 47px;
       margin: auto;
+      z-index: 1;
       & h3 {
-         color: red;
+         color: $colorSecundari;
          text-align: left;
          font-size: 1.68vw; // 24px
          font-weight: 500;
          line-height: 34.22px;
          margin-left: 18px;
-         outline: 1px solid red;
       }
       & img {
          width: 1.68vw;
@@ -34,13 +33,18 @@
       }
    }
 
-   & p {
-      padding: 22px;
+   &__info {
+      width: 79.4%;  
+      height: min-content;
+      margin: -8px auto 0 auto;
+      padding: 22px 18px;
       text-align: left;
       color: $colorPrimari;
       font-style: normal;
       font-weight: 400;
       font-size: 1.68vw; // 24px
-      line-height: 142.6%;
+      line-height: 142.6%; // 34px
+      background-color: $colorFitxes;
+      border-radius: 5px;
    }
 }

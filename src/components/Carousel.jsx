@@ -69,7 +69,7 @@ console.log(logements)
 // CARRUSSEL façon Mentor.
 
 const Carousel = ({ imgurl }) => {
-   const [currentIndex, setCurrentIndex] = useState(0)
+   const [currentIndex, setCurrentIndex] = useState(0);
 
    const id = useParams()
    console.log(id)

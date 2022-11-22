@@ -1,6 +1,6 @@
 /* Skills 🎭 src/components/Skills.jsx */
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ArrowUp from '../assets/icons/arrowUp.svg'
 import ArrowDown from '../assets/icons/arrowDown.svg'
 
@@ -10,14 +10,14 @@ function Skills({ title, skill }) {
    return isTrigger ? (
       <div className="K-Skills">
          <div className="K-Skills__article">
-            <h3 className="articleTitle">{title}</h3>
+            <h3 className="articleTitle" key={title}>{title}</h3>
             <img
                src={ArrowUp}
                alt="Flèche en haut"
                onClick={() => setIsTrigger(false)}
             />
          </div>
-         <p className="K-Skills__info">{skill}</p>
+         <p className="K-Skills__info" key={skill}>{skill}</p>
       </div>
    ) : (
       <div className="K-Skills">

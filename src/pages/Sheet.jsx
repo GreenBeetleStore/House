@@ -10,16 +10,20 @@ import InfoSheet from '../components/InfoSheet'
 
 import FitxaSheet from '../components/FitxaSheet'
 
-function Sheet() {
-   const { logementId } = useParams();
-   const logement = logements.find((logement) => logement.id === logementId)
-   const { pictures, description, host, rating, location, equipments, tags } = logement
+// ESTRUCTURA 1.
 
-   return logement ? (
+function Sheet() {
+   const { sheetId } = useParams();
+   const sheet = logements.find((sheet) => sheet.id === sheetId)
+   const { pictures, } = sheet
+   // const { pictures, title, description, host, rating, location, equipments, tags } = sheet
+
+   return sheet ? (
       <div className="K-Sheet">
 
-         <Carousel pictures={pictures} />
-
+         <Carousel 
+            pictures={pictures} 
+         />
 
          <FitxaSheet />
 
@@ -37,5 +41,33 @@ function Sheet() {
       redirect('*')
    )
 }
+
+// ESTRUCTURA 2.
+
+// function Sheet() {
+   
+//    return (
+//       <div className="K-Sheet">
+
+//       {logements.map( sheet =>
+//          <Carousel 
+//             pictures={sheet.pictures} 
+//          />
+//          )}
+
+//          <FitxaSheet />
+
+
+//          <div className="K-Sheet__keywords k-keywords">
+//             {/* <LeftBox /> */}
+//             {/* <RightBox /> */}
+//          </div>
+
+//          <div className="K-Sheet__info k-info">
+//             {/* <InfoSheet /> */}
+//          </div>
+//       </div>
+//    ) 
+// }
 
 export default Sheet

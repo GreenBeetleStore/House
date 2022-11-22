@@ -10,50 +10,21 @@ import InfoSheet from '../components/InfoSheet'
 
 import FitxaSheet from '../components/FitxaSheet'
 
-// ESTRUCTURA 1.
-
-function Sheet() {
-   const { sheetId } = useParams();
-   const sheet = logements.find((sheet) => sheet.id === sheetId)
-   const { pictures, } = sheet
-   // const { pictures, title, description, host, rating, location, equipments, tags } = sheet
-
-   return sheet ? (
-      <div className="K-Sheet">
-
-         <Carousel 
-            pictures={pictures} 
-         />
-
-         <FitxaSheet />
-
-
-         <div className="K-Sheet__keywords k-keywords">
-            {/* <LeftBox /> */}
-            {/* <RightBox /> */}
-         </div>
-
-         <div className="K-Sheet__info k-info">
-            {/* <InfoSheet /> */}
-         </div>
-      </div>
-   ) : (
-      redirect('*')
-   )
-}
-
-// ESTRUCTURA 2.
+// ESTRUCTURA 1️⃣. 
+//⏬=============⏬
 
 // function Sheet() {
-   
-//    return (
+//    const { sheetId } = useParams();
+//    const sheet = logements.find((sheet) => sheet.id === sheetId)
+//    const { pictures, } = sheet
+//    // const { pictures, title, description, host, rating, location, equipments, tags } = sheet
+
+//    return sheet ? (
 //       <div className="K-Sheet">
 
-//       {logements.map( sheet =>
 //          <Carousel 
-//             pictures={sheet.pictures} 
+//             pictures={pictures} 
 //          />
-//          )}
 
 //          <FitxaSheet />
 
@@ -67,7 +38,38 @@ function Sheet() {
 //             {/* <InfoSheet /> */}
 //          </div>
 //       </div>
-//    ) 
+//    ) : (
+//       redirect('*')
+//    )
 // }
+
+// ESTRUCTURA 2️⃣.
+//⏬=============⏬
+
+function Sheet() {
+   
+   return (
+      <div className="K-Sheet">
+
+      {logements.map( sheet =>
+         <Carousel 
+            pictures={sheet.pictures} 
+         />
+         )}
+
+         <FitxaSheet />
+
+
+         <div className="K-Sheet__keywords k-keywords">
+            {/* <LeftBox /> */}
+            {/* <RightBox /> */}
+         </div>
+
+         <div className="K-Sheet__info k-info">
+            {/* <InfoSheet /> */}
+         </div>
+      </div>
+   ) 
+}
 
 export default Sheet

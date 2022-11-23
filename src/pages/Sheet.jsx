@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useParams, redirect } from 'react-router-dom'
-import logements from '../mocks/logements.json'
+import Logements from '../mocks/logements.json'
 import Carousel from '../components/Carousel'
 import LeftBox from '../components/LeftBox'
 import RightBox from '../components/RightBox'
@@ -15,16 +15,14 @@ import FitxaSheet from '../components/FitxaSheet'
 
 // function Sheet() {
 //    const { sheetId } = useParams();
-//    const sheet = logements.find((sheet) => sheet.id === sheetId)
-//    const { pictures, } = sheet
-//    // const { pictures, title, description, host, rating, location, equipments, tags } = sheet
+//    const sheet = Logements.find((sheet) => sheet.id === sheetId)
+
+//    const { pictures, title, description, host, rating, location, equipments, tags } = sheet
 
 //    return sheet ? (
 //       <div className="K-Sheet">
 
-//          <Carousel 
-//             pictures={pictures} 
-//          />
+//          <Carousel Picture={pictures} />
 
 //          <FitxaSheet />
 
@@ -47,15 +45,18 @@ import FitxaSheet from '../components/FitxaSheet'
 //⏬=============⏬
 
 function Sheet() {
-   
+
+   const { id } = useParams()
+      
    return (
       <div className="K-Sheet">
 
-      {logements.map( sheet =>
+      {Logements.map( sheet =>
          <Carousel 
-            pictures={sheet.pictures} 
+            key={id}
+            Picture={sheet.pictures} 
          />
-         )}
+      )}
 
          <FitxaSheet />
 

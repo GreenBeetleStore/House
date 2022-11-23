@@ -5,8 +5,8 @@ import ArrowRight from '../assets/icons/arrowRight.svg'
 import ArrowLeft from '../assets/icons/arrowLeft.svg'
 
 
-function Carousel({Picture}) {
-   console.log(Picture)
+function Carousel({ Picture }) {
+   
    const [isExpose, setIsExpose] = useState(0)
 
    const previousPicture = () => {
@@ -19,6 +19,8 @@ function Carousel({Picture}) {
       const newIndex = lastPicture ? 0 : isExpose + 1
       setIsExpose(newIndex)
    }
+   
+   console.log(Picture)
 
    return isExpose === 0 && 1 === Picture.length ? (
       <section className="K-Sheet__carousel k-carousel">

@@ -4,37 +4,39 @@ import React from 'react'
 import { useParams, redirect } from 'react-router-dom'
 import Logements from '../mocks/logements.json'
 import Carousel from '../components/Carousel'
-import LeftBox from '../components/LeftBox'
-import RightBox from '../components/RightBox'
-import InfoSheet from '../components/InfoSheet'
-
 import FitxaSheet from '../components/FitxaSheet'
 
-// ESTRUCTURA 1️⃣. 
+// ESTRUCTURA 1️⃣.
 //⏬=============⏬
 
 // function Sheet() {
-//    const { sheetId } = useParams();
-//    const sheet = Logements.find((sheet) => sheet.id === sheetId)
+//    const { logementId } = useParams()
+//    const logement = Logements.find((logement) => logement.id === logementId)
 
-//    const { pictures, title, description, host, rating, location, equipments, tags } = sheet
+//    const {
+//       pictures,
+//       title,
+//       description,
+//       host,
+//       rating,
+//       location,
+//       equipments,
+//       tags,
+//    } = logement
 
-//    return sheet ? (
+//    return logement ? (
 //       <div className="K-Sheet">
-
 //          <Carousel Picture={pictures} />
 
-//          <FitxaSheet />
-
-
-//          <div className="K-Sheet__keywords k-keywords">
-//             {/* <LeftBox /> */}
-//             {/* <RightBox /> */}
-//          </div>
-
-//          <div className="K-Sheet__info k-info">
-//             {/* <InfoSheet /> */}
-//          </div>
+//          <FitxaSheet
+//             title={title}
+//             description={description}
+//             host={host}
+//             rating={rating}
+//             location={location}
+//             equipments={equipments}
+//             tags={tags}
+//          />
 //       </div>
 //    ) : (
 //       redirect('*')
@@ -47,30 +49,29 @@ import FitxaSheet from '../components/FitxaSheet'
 function Sheet() {
 
    const { id } = useParams()
-      
+
    return (
       <div className="K-Sheet">
 
-      {Logements.map( sheet =>
-         <Carousel 
+      {Logements.map( logement =>
+         <Carousel
             key={id}
-            Picture={sheet.pictures} 
+            Picture={logement.pictures}
          />
       )}
 
          <FitxaSheet />
 
-
-         <div className="K-Sheet__keywords k-keywords">
+         {/* <div className="K-Sheet__keywords k-keywords"> */}
             {/* <LeftBox /> */}
             {/* <RightBox /> */}
-         </div>
+         {/* </div> */}
 
-         <div className="K-Sheet__info k-info">
+         {/* <div className="K-Sheet__info k-info"> */}
             {/* <InfoSheet /> */}
-         </div>
+         {/* </div> */}
       </div>
-   ) 
+   )
 }
 
 export default Sheet

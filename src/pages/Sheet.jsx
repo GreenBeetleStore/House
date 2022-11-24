@@ -60,7 +60,7 @@ function Sheet() {
          />
       )}
 
-         <FitxaSheet />
+         {/* <FitxaSheet /> */}
 
          {/* <div className="K-Sheet__keywords k-keywords"> */}
             {/* <LeftBox /> */}

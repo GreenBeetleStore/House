@@ -49,16 +49,14 @@ import FitxaSheet from '../components/FitxaSheet'
 function Sheet() {
 
    const { id } = useParams()
+   const logement = Logements.find (l => l.id === id)
 
    return (
-      <div className="K-Sheet">
-
-      {Logements.map( logement =>
+      <div className="K-Sheet">     
          <Carousel
             key={id}
             Picture={logement.pictures}
          />
-      )}
 
          {/* <FitxaSheet /> */}
 

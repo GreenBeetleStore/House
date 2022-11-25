@@ -23,12 +23,10 @@ function Carousel({ Picture }) {
    console.log(Picture)
 
    return isExpose === 0 && 1 === Picture.length ? (
-      <section className="K-Sheet__carousel k-carousel">
-         <div className="K-Sheet__carousel__photo k-carousel__photo" style={{ backgroundImage: `url(${Picture[isExpose]})` }} ></div>
+      <section className="K-Sheet__carousel K-Sheet__carousel__photo" style={{ backgroundImage: `url(${Picture[isExpose]})` }} >
       </section>
    ) : (
-      <section className="K-Sheet__carousel k-carousel">
-         <div className="K-Sheet__carousel__photo k-carousel__photo" style={{ backgroundImage: `url(${Picture[isExpose]})` }} ></div>
+      <section className="K-Sheet__carousel K-Sheet__carousel__photo" style={{ backgroundImage: `url(${Picture[isExpose]})` }} >
          <div className="K-Sheet__carousel__arrows k-arrows">
             <div className="K-Sheet__carousel__arrows__arrowLeft k-carousel__arrowLeft">
                <img src={ArrowLeft} alt="flèche gauche" onClick={previousPicture} />

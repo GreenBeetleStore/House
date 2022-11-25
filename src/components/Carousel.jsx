@@ -19,8 +19,6 @@ function Carousel({ Picture }) {
       const newIndex = lastPicture ? 0 : isExpose + 1
       setIsExpose(newIndex)
    }
-   
-   console.log(Picture)
 
    return isExpose === 0 && 1 === Picture.length ? (
       <section className="K-Sheet__carousel K-Sheet__carousel__photo" style={{ backgroundImage: `url(${Picture[isExpose]})` }} >

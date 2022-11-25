@@ -57,8 +57,15 @@ function Sheet() {
             key={id}
             Picture={logement.pictures}
          />
-
-         {/* <FitxaSheet /> */}
+         <FitxaSheet
+            title={logement.title}
+            description={logement.description}
+            host={logement.host}
+            rating={logement.rating}
+            location={logement.location}
+            equipments={logement.equipments}
+            tags={logement.tags}
+         />
 
          {/* <div className="K-Sheet__keywords k-keywords"> */}
             {/* <LeftBox /> */}

@@ -354,7 +354,7 @@ a:focus {
   align-items: center;
   padding: 0 6.95%;
 }
-.K-Sheet__keywords, .K-Sheet__info {
+.K-Sheet__keywords {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -362,7 +362,7 @@ a:focus {
   align-items: center;
   outline: 1px solid green;
 }
-.K-Sheet__keywords__leftBox, .K-Sheet__info__leftBox {
+.K-Sheet__keywords__leftBox {
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -370,7 +370,7 @@ a:focus {
   justify-content: center;
   outline: 1px solid green;
 }
-.K-Sheet__keywords__leftBox__title h2, .K-Sheet__info__leftBox__title h2 {
+.K-Sheet__keywords__leftBox__title h2 {
   color: #FF6060;
   font-size: 2.52;
   font-style: normal;
@@ -382,7 +382,7 @@ a:focus {
   margin: 0;
   outline: 1px solid green;
 }
-.K-Sheet__keywords__leftBox__region, .K-Sheet__info__leftBox__region {
+.K-Sheet__keywords__leftBox__region {
   color: #FF6060;
   font-size: 1.26vw;
   font-weight: 500;
@@ -391,21 +391,21 @@ a:focus {
   margin: 0;
   outline: 1px solid green;
 }
-.K-Sheet__keywords__leftBox__labels, .K-Sheet__info__leftBox__labels {
+.K-Sheet__keywords__leftBox__labels {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   outline: 1px solid green;
 }
-.K-Sheet__keywords__rightBox, .K-Sheet__info__rightBox {
+.K-Sheet__keywords__rightBox {
   display: flex;
   flex-direction: column;
   width: 25%;
   align-items: flex-end;
   justify-content: center;
 }
-.K-Sheet__keywords__rightBox__owner, .K-Sheet__info__rightBox__owner {
+.K-Sheet__keywords__rightBox__owner {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -414,7 +414,7 @@ a:focus {
   gap: 20px;
   text-align: right;
 }
-.K-Sheet__keywords__rightBox p, .K-Sheet__info__rightBox p {
+.K-Sheet__keywords__rightBox p {
   color: #FF6060;
   width: 110px;
   height: 52px;
@@ -422,12 +422,12 @@ a:focus {
   font-weight: 500;
   line-height: 25.67px;
 }
-.K-Sheet__keywords__rightBox__thumbnail, .K-Sheet__info__rightBox__thumbnail {
+.K-Sheet__keywords__rightBox__thumbnail {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
-.K-Sheet__keywords__rightBox__starScore, .K-Sheet__info__rightBox__starScore {
+.K-Sheet__keywords__rightBox__starScore {
   display: flex;
   gap: 10px;
 }

@@ -9,30 +9,18 @@ import RightBox from '../components/RightBox'
 import InfoSheet from '../components/InfoSheet'
 
 function Sheet() {
-
    const { id } = useParams()
-   const logement = Logements.find (l => l.id === id)
+   const logement = Logements.find((l) => l.id === id)
 
    return (
-      <div className="K-Sheet">     
-         <Carousel
-            key={id}
-            Picture={logement.pictures}
+      <div className="K-Sheet">
+         <Carousel key={id} Picture={logement.pictures} />
+            <LeftBox title={logement.title} location={logement.location} />
+            <RightBox host={logement.host} rating={logement.rating} />
+         <InfoSheet
+            description={logement.description}
+            equipments={logement.equipments}
          />
-         <div className="K-Sheet__keywords k-keywords">
-            <LeftBox 
-               title={logement.title}
-               location={logement.location}               
-            />
-            <RightBox
-               host={logement.host}
-               rating={logement.rating}
-            />
-            <InfoSheet               
-               description={logement.description}
-               equipments={logement.equipments}
-            />
-         </div>
       </div>
    )
 }

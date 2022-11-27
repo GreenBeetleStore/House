@@ -1,50 +1,12 @@
 /* Sheet 🈴 src/pages/Sheet.jsx*/
 
 import React from 'react'
-import { useParams, redirect } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Logements from '../mocks/logements.json'
 import Carousel from '../components/Carousel'
-import FitxaSheet from '../components/FitxaSheet'
-
-// ESTRUCTURA 1️⃣.
-//⏬=============⏬
-
-// function Sheet() {
-//    const { logementId } = useParams()
-//    const logement = Logements.find((logement) => logement.id === logementId)
-
-//    const {
-//       pictures,
-//       title,
-//       description,
-//       host,
-//       rating,
-//       location,
-//       equipments,
-//       tags,
-//    } = logement
-
-//    return logement ? (
-//       <div className="K-Sheet">
-//          <Carousel Picture={pictures} />
-
-//          <FitxaSheet
-//             title={title}
-//             description={description}
-//             host={host}
-//             rating={rating}
-//             location={location}
-//             equipments={equipments}
-//             tags={tags}
-//          />
-//       </div>
-//    ) : (
-//       redirect('*')
-//    )
-// }
-
-// ESTRUCTURA 2️⃣.
-//⏬=============⏬
+import LeftBox from '../components/LeftBox'
+import RightBox from '../components/RightBox'
+import InfoSheet from '../components/InfoSheet'
 
 function Sheet() {
 
@@ -57,24 +19,21 @@ function Sheet() {
             key={id}
             Picture={logement.pictures}
          />
-         <FitxaSheet
-            title={logement.title}
-            description={logement.description}
-            host={logement.host}
-            rating={logement.rating}
-            location={logement.location}
-            equipments={logement.equipments}
-            tags={logement.tags}
-         />
-
-         {/* <div className="K-Sheet__keywords k-keywords"> */}
-            {/* <LeftBox /> */}
-            {/* <RightBox /> */}
-         {/* </div> */}
-
-         {/* <div className="K-Sheet__info k-info"> */}
-            {/* <InfoSheet /> */}
-         {/* </div> */}
+         <div className="K-Sheet__keywords k-keywords">
+            <LeftBox 
+               title={logement.title}
+               location={logement.location}               
+            />
+            {/* <RightBox
+               host={logement.host.name}
+               photo={logement.host.picture}
+               rating={logement.rating}
+            /> */}
+            {/* <InfoSheet               
+               description={logement.description}
+               equipments={logement.equipments}
+            /> */}
+         </div>
       </div>
    )
 }

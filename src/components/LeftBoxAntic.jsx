@@ -1,8 +1,15 @@
 /* LeftBox ⏮🎁 src/components/LeftBox.jsx */
 
-import Tags from './Tags'
+import React from 'react'
+import { useParams } from 'react-router-dom'
+import logements from '../mocks/logements.json'
+import Tags from '../components/Tags'
 
-function LeftBox({ title, location, tags }) {
+const LeftBox = () => {
+   const { logementId } = useParams()
+   const logement = logements.find((logement) => logement.id === logementId)
+   const { title, location } = logement
+
    return (
       <div className="K-Sheet__keywords__leftBox k-leftBox">
          <div className="K-Sheet__keywords__leftBox__title k-title">
@@ -11,9 +18,8 @@ function LeftBox({ title, location, tags }) {
          <div className="K-Sheet__keywords__leftBox__region k-region">
             <p>{location}</p>
          </div>
-
          <div className="K-Sheet__keywords__leftBox__labels k-labels">
-            {tags.map((tag, index) => (
+            {logement.tags.map((tag, index) => (
                <Tags key={index} label={tag} />
             ))}
          </div>

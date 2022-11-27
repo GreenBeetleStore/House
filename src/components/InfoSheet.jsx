@@ -1,49 +1,28 @@
 /* InfoSheet 🚦 src/components/InfoSheet.jsx */
 
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
-import logements from '../mocks/logements.json'
 import ArrowUp from '../assets/icons/arrowUp.svg'
 import ArrowDown from '../assets/icons/arrowDown.svg'
 
-const InfoSheet = () => {
-   const { logementId } = useParams()
-   const logement = logements.find((logement) => logement.id === logementId)
-   const { description, equipments } = logement
-
-
-   /* DropDown 🏹*/
-   const [trigger, isTrigger] = useState(false)
-   const triggerStatus = () => {
-      isTrigger(!trigger)
-   }
-
+function InfoSheet(description, equipments) {
    return (
       <div className="K-Sheet__info k-info">
          <div className="K-Sheet__info__article">
-            <div className="K-Sheet__info__article__tab" onClick={triggerStatus}>
+            <div className="K-Sheet__info__article__tab">
                <h4>Description</h4>
-               {trigger ? (
-               <img src={ArrowUp} alt="Flèche en haut" />
-            ) : (
-               <img src={ArrowDown} alt="Flèche en bas" />
-            )}
+               <img src={ArrowUp} alt="Flèche vers le haut" />
             </div>
             <div className="K-Sheet__info__article__description">
-            {trigger && <p>{description}</p>}
+               <p>{description}</p>
             </div>
          </div>
+
          <div className="K-Sheet__info__article">
-            <div className="K-Sheet__info__article__tab" onClick={triggerStatus}>
+            <div className="K-Sheet__info__article__tab">
                <h4>Équipements</h4>
-               {trigger ? (
-               <img src={ArrowUp} alt="Flèche en haut" />
-            ) : (
-               <img src={ArrowDown} alt="Flèche en bas" />
-            )}
+               <img src={ArrowUp} alt="Flèche vers le haut" />
             </div>
             <div className="K-Sheet__info__article__description">
-            {trigger && <p>{equipments}</p>}
+               <p>{equipments}</p>
             </div>
          </div>
       </div>

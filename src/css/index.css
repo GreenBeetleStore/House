@@ -360,6 +360,7 @@ a:focus {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  outline: 1px solid green;
 }
 .K-Sheet__keywords__leftBox, .K-Sheet__info__leftBox {
   display: flex;
@@ -367,6 +368,7 @@ a:focus {
   width: 75%;
   align-items: flex-start;
   justify-content: center;
+  outline: 1px solid green;
 }
 .K-Sheet__keywords__leftBox__title h2, .K-Sheet__info__leftBox__title h2 {
   color: #FF6060;
@@ -378,6 +380,7 @@ a:focus {
   width: auto;
   height: 80px;
   margin: 0;
+  outline: 1px solid green;
 }
 .K-Sheet__keywords__leftBox__region, .K-Sheet__info__leftBox__region {
   color: #FF6060;
@@ -386,29 +389,14 @@ a:focus {
   text-align: left;
   line-height: 25.67px;
   margin: 0;
+  outline: 1px solid green;
 }
 .K-Sheet__keywords__leftBox__labels, .K-Sheet__info__leftBox__labels {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-}
-.K-Sheet__keywords__leftBox__labels ul, .K-Sheet__info__leftBox__labels ul {
-  display: flex;
-  gap: 10px;
-  margin-left: -38px;
-  list-style: none;
-  font-size: 0.98vw;
-  font-weight: 500;
-  line-height: 19.96px;
-  text-align: center;
-  color: #FFFFFF;
-}
-.K-Sheet__keywords__leftBox__labels ul li, .K-Sheet__info__leftBox__labels ul li {
-  width: 115px;
-  height: 25;
-  border-radius: 10px;
-  background-color: #FF6060;
+  outline: 1px solid green;
 }
 .K-Sheet__keywords__rightBox, .K-Sheet__info__rightBox {
   display: flex;
@@ -438,7 +426,6 @@ a:focus {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #C4C4C4;
 }
 .K-Sheet__keywords__rightBox__starScore, .K-Sheet__info__rightBox__starScore {
   display: flex;

@@ -13,6 +13,7 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      outline: 1px solid green;
 
       &__leftBox {
          display: flex;
@@ -20,6 +21,7 @@
          width: 75%;
          align-items: flex-start;
          justify-content: center;
+         outline: 1px solid green;
 
          &__title h2 {
             color: $colorPrimari;
@@ -31,6 +33,7 @@
             width: auto;
             height: 80px;
             margin: 0;
+            outline: 1px solid green;
          }
 
          &__region {
@@ -40,6 +43,7 @@
             text-align: left;
             line-height: 25.67px;
             margin: 0;
+            outline: 1px solid green;
          }
 
          &__labels {
@@ -47,24 +51,9 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
+            outline: 1px solid green;
 
-            & ul {
-               display: flex;
-               gap: 10px;
-               margin-left: -38px;
-               list-style: none;
-               font-size: 0.98vw; // 14px
-               font-weight: 500;
-               line-height: 19.96px;
-               text-align: center;
-               color: $colorSecundari;
-               & li {
-                  width: 115px;
-                  height: 25;
-                  border-radius: 10px;
-                  background-color: $colorPrimari;
-               }
-            }
+            
          }
       }
 
@@ -98,7 +87,6 @@
             width: 64px;
             height: 64px;
             border-radius: 50%;
-            background-color: $colorAmfitrio;
          }
 
          &__starScore {

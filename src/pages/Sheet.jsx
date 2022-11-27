@@ -24,15 +24,14 @@ function Sheet() {
                title={logement.title}
                location={logement.location}               
             />
-            {/* <RightBox
-               host={logement.host.name}
-               photo={logement.host.picture}
+            <RightBox
+               host={logement.host}
                rating={logement.rating}
-            /> */}
-            {/* <InfoSheet               
+            />
+            <InfoSheet               
                description={logement.description}
                equipments={logement.equipments}
-            /> */}
+            />
          </div>
       </div>
    )

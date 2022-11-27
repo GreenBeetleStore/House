@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowUp from '../assets/icons/arrowUp.svg'
-import ArrowDown from '../assets/icons/arrowDown.svg'
+// import ArrowDown from '../assets/icons/arrowDown.svg'
 import Star from '../assets/icons/star.svg'
 
 // Fitxer COMODIN només d'estructura.

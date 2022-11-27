@@ -1,7 +1,7 @@
 /* InfoSheet 🚦 src/components/InfoSheet.jsx */
 
 import ArrowUp from '../assets/icons/arrowUp.svg'
-import ArrowDown from '../assets/icons/arrowDown.svg'
+// import ArrowDown from '../assets/icons/arrowDown.svg'
 
 function InfoSheet(description, equipments) {
    return (

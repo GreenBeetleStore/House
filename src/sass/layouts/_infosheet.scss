@@ -34,7 +34,7 @@
       }
 
       &__description {
-         display: inline-block;
+         display: flex;
          flex-direction: column;
          background-color: $colorFitxes;
          border-radius: 10px;
@@ -45,6 +45,9 @@
          z-index: -1;
 
          & p {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             font-size: 1.25vw; // 18px;
             font-style: normal;
             font-weight: 400;

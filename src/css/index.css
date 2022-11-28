@@ -329,7 +329,7 @@ a:focus {
   line-height: 142.6%;
 }
 .K-Sheet__info__article__description {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 10px;
@@ -340,6 +340,9 @@ a:focus {
   z-index: -1;
 }
 .K-Sheet__info__article__description p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-size: 1.25vw;
   font-style: normal;
   font-weight: 400;

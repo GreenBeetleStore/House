@@ -1,0 +1,55 @@
+/* info 🚦 src/sass/layouts/_info.scss */
+
+.K-Sheet__info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   outline: 1px solid blueviolet;
+
+   &__article {
+      display: flex;
+      width: 46.9%;
+      height: 295px;
+      flex-direction: column;
+      margin-bottom: 120px;
+      outline: 1px solid green;
+
+      &__tab {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         background-color: $colorPrimari;
+         border-radius: 10px;
+         padding: 0 20px 0 18.65px;
+
+         & h4 {
+            color: $colorSecundari;
+            font-size: 1.26vw; // 18px
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+         }
+      }
+
+      &__description {
+         background-color: $colorFitxes;
+         border-radius: 10px;
+         width: 94%;
+         height: 249px;
+         padding: 40px 12px 53px 20px;
+         margin-top: -20px;
+         z-index: -1;
+
+         & p {
+            font-size: 1.25vw; // 18px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            line-height: 142.6%; //26px
+            color: $colorPrimari;
+         }
+      }
+   }
+}

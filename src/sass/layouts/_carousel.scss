@@ -1,12 +1,17 @@
 /* carousel 🎠 src/sass/layouts/_carousel.scss */
 
-.K-Sheet__carousel {
+.K-Sheet__carousel, .K-Sheet__carousel__photo {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 100%; // 86.11%; // 1240px
+   width: 100%;  // 1240px
    height: 415px;
-
+   border-radius: 25px;
+   mix-blend-mode: normal;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+      
    &__arrows {
       display: flex;
       justify-content: space-between;
@@ -27,24 +32,15 @@
       }
    }
 
-   &__photo {
-      display: flex;
-      position: relative;
-      mix-blend-mode: normal;
-      max-width: 86.11%;      // 1240px
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 25px;
-   }
-
    &__pageNumber {
       position: absolute;
-      top: 346px;
+      top: 500px;
+      width: 24px;
+      height: 32.4px;
       font-size: 1.26vw; // 18px
       font-weight: 500;
       font-style: normal;
-      line-height: 142.6%; // 26px
+      line-height: 25.67px;
       color: $colorSecundari;
    }
 }

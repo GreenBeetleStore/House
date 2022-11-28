@@ -1,0 +1,43 @@
+/* rightbox 🎁⏭ src/sass/layouts/_rightbox.scss */
+
+.K-Sheet__keywords__rightBox {
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+   align-items: flex-end;
+   justify-content: center;
+
+   &__owner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      text-align: right;
+      outline: 1px solid blue;
+   }
+
+   & p {
+      color: $colorPrimari;
+      width: 110px;
+      height: 52px;
+      font-size: 1.26vw; // 18px
+      font-weight: 500;
+      line-height: 25.67px;
+      outline: 1px solid green;
+   }
+
+   &__thumbnail {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      outline: 1px solid greenyellow;
+   }
+
+   &__starScore {
+      display: flex;
+      gap: 10px;
+      outline: 1px solid rgb(255, 187, 0);
+   }
+}

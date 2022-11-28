@@ -1,0 +1,10 @@
+/* keywords 📟 src/sass/layouts/_keywords.scss */
+
+.K-Sheet__keywords {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      outline: 1px solid blue;
+}

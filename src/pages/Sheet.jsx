@@ -19,6 +19,7 @@ function Sheet() {
             <LeftBox title={logement.title} location={logement.location} tags={logement.tags} />
             <RightBox name={logement.host.name} picture={logement.host.picture} rating={logement.rating} />
          </div>
+         
          <InfoSheet 
             description={logement.description}
             equipments={logement.equipments}

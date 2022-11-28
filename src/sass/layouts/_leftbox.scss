@@ -29,31 +29,29 @@
    }
 
    &__tags {
-      display: inline-block;
+      display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
       width: 500px;
       height: 50px;
 
       &__labels {
-         justify-content: flex-start;
-         align-items: center;
-         max-width: 180px;
-         height: 25px;
-         border-radius: 10px;
-         background-color: $colorPrimari;
-         margin: 0 10px 24px 0;
-         outline: 1px solid navy;
-
-         &__label {
+         & p {
             flex-wrap: nowrap;
-            width: 500px;
+            width: max-content;
+            height: 25px;
             font-size: 0.98vw; // 14px
             font-style: normal;
             font-weight: 500;
             line-height: 142.6%; // 20px
             text-align: center;
+            background-color: $colorPrimari;
             color: $colorSecundari;
+            border-radius: 10px;
+            padding: 3px 30px 2px 30px;
+            margin: 0 10px 24px 0;
          }
       }
    }

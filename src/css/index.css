@@ -296,7 +296,7 @@ a:focus {
   background-size: 100% 2px;
 }
 
-/* info 🚦 src/sass/layouts/_info.scss */
+/* infosheet 🚦 src/sass/layouts/_infosheet.scss */
 .K-Sheet__info {
   display: flex;
   justify-content: space-between;
@@ -356,7 +356,6 @@ a:focus {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid blue;
 }
 
 /* leftbox ⏮🎁 src/sass/layouts/_leftbox.scss */
@@ -387,31 +386,28 @@ a:focus {
   margin: 0;
 }
 .K-Sheet__keywords__leftBox__tags {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
   width: 500px;
   height: 50px;
 }
-.K-Sheet__keywords__leftBox__tags__labels {
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 180px;
-  height: 25px;
-  border-radius: 10px;
-  background-color: #FF6060;
-  margin: 0 10px 24px 0;
-  outline: 1px solid navy;
-}
-.K-Sheet__keywords__leftBox__tags__labels__label {
+.K-Sheet__keywords__leftBox__tags__labels p {
   flex-wrap: nowrap;
-  width: 500px;
+  width: max-content;
+  height: 25px;
   font-size: 0.98vw;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
   text-align: center;
+  background-color: #FF6060;
   color: #FFFFFF;
+  border-radius: 10px;
+  padding: 3px 30px 2px 30px;
+  margin: 0 10px 24px 0;
 }
 
 /* rightbox 🎁⏭ src/sass/layouts/_rightbox.scss */

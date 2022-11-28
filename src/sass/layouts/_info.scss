@@ -34,6 +34,8 @@
       }
 
       &__description {
+         display: inline-block;
+         flex-direction: column;
          background-color: $colorFitxes;
          border-radius: 10px;
          width: 94%;
@@ -49,6 +51,7 @@
             text-align: left;
             line-height: 142.6%; //26px
             color: $colorPrimari;
+            outline: 1px solid tomato;
          }
       }
    }

@@ -22,7 +22,7 @@ function InfoSheet( logement, description, equipments ) {
                <img src={ArrowUp} alt="Flèche vers le haut" />
             </div>
             <div className="K-Sheet__info__article__description">
-               <p>{logement.equipments}</p><br></br>
+               <p>{logement.equipments}</p>
             </div>
          </div>
       </div>

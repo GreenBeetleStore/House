@@ -410,7 +410,6 @@ a:focus {
   width: 100%;
   gap: 20px;
   text-align: right;
-  outline: 1px solid blue;
 }
 .K-Sheet__keywords__rightBox p {
   color: #FF6060;
@@ -419,18 +418,16 @@ a:focus {
   font-size: 1.26vw;
   font-weight: 500;
   line-height: 25.67px;
-  outline: 1px solid green;
 }
-.K-Sheet__keywords__rightBox__thumbnail {
+.K-Sheet__keywords__rightBox .k-thumbnail {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  outline: 1px solid greenyellow;
 }
 .K-Sheet__keywords__rightBox__starScore {
   display: flex;
   gap: 10px;
-  outline: 1px solid rgb(255, 187, 0);
+  outline: 1px solid salmon;
 }
 
 /* sheet 🈴 src/sass/layouts/_sheet.scss */

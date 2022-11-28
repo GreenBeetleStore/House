@@ -15,7 +15,6 @@
       width: 100%;
       gap: 20px;
       text-align: right;
-      outline: 1px solid blue;
    }
 
    & p {
@@ -25,19 +24,17 @@
       font-size: 1.26vw; // 18px
       font-weight: 500;
       line-height: 25.67px;
-      outline: 1px solid green;
    }
 
-   &__thumbnail {
+   & .k-thumbnail {
       width: 64px;
       height: 64px;
       border-radius: 50%;
-      outline: 1px solid greenyellow;
    }
 
    &__starScore {
       display: flex;
       gap: 10px;
-      outline: 1px solid rgb(255, 187, 0);
+      outline: 1px solid salmon;
    }
 }

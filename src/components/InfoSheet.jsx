@@ -3,7 +3,7 @@
 import ArrowUp from '../assets/icons/arrowUp.svg'
 // import ArrowDown from '../assets/icons/arrowDown.svg'
 
-function InfoSheet( description, equipments ) {
+function InfoSheet( logement, description, equipments ) {
    return (
       <div className="K-Sheet__info k-info">
          <div className="K-Sheet__info__article">
@@ -12,8 +12,7 @@ function InfoSheet( description, equipments ) {
                <img src={ArrowUp} alt="Flèche vers le haut" />
             </div>
             <div className="K-Sheet__info__article__description">
-               <p>estamos intentando de que aparezca automaticamente solo con llamar al arreglo</p>
-               {/* <p>{description}</p> */}
+               <p>{logement.description}</p>
             </div>
          </div>
 
@@ -23,8 +22,7 @@ function InfoSheet( description, equipments ) {
                <img src={ArrowUp} alt="Flèche vers le haut" />
             </div>
             <div className="K-Sheet__info__article__description">
-            <p>estamos intentando de que aparezca automaticamente solo con llamar al arreglo</p>
-               {/* <p>{equipments}</p> */}
+               <p>{logement.equipments}</p><br></br>
             </div>
          </div>
       </div>

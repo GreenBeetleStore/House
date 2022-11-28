@@ -17,7 +17,7 @@ function Sheet() {
          <Carousel key={id} Picture={logement.pictures} />
          <div className="K-Sheet__keywords k-keywords">
             <LeftBox title={logement.title} location={logement.location} />
-            <RightBox host={logement.host} rating={logement.rating} />
+            <RightBox name={logement.host.name} picture={logement.host.picture} rating={logement.rating} />
          </div>
          <InfoSheet
             description={logement.description}

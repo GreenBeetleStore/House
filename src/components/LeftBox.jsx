@@ -13,11 +13,11 @@ function LeftBox({ title, location, tags }) {
                <p>{location}</p>
             </div>
 
-            {/* <div className="K-Sheet__keywords__leftBox__labels k-labels">
-               {tags.map((tag, index) => (
+            <div className="K-Sheet__keywords__leftBox__labels k-labels">
+               {/* {tags.map((tag, index) => (
                   <Tags key={index} label={tag} />
-               ))}
-            </div> */}
+               ))} */}
+            </div>
          </div>
       
    )

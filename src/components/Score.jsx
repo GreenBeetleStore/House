@@ -1,28 +1,18 @@
 // Score ⭐ src/components/Score.jsx
 
-import Star from '../assets/icons/star.svg'
-import StarGrey from '../assets/icons/star-1.svg'
+import Orange from '../assets/icons/starorange.svg'
+import Grey from '../assets/icons/stargrey.svg'
 
 function Score({ score }) {
    const stars = [1, 2, 3, 4, 5]
 
    return (
       <div className="K-Sheet__keywords__rightBox__starScore">
-         {stars.map((star) =>
-            score >= star ? (
-               <img
-                  className="K-Sheet__keywords__rightBox__starScore__icon"
-                  key={star.toString()}
-                  src={Star}
-                  alt="gold star"
-               />
+         {stars.map((data, index) =>
+            score >= data ? (
+               <img key={index} src={Orange} alt="" />
             ) : (
-               <img
-                  className="K-Sheet__keywords__rightBox__starScore__icon"
-                  key={star.toString()}
-                  src={StarGrey}
-                  alt="grey star"
-               />
+               <img key={index} src={Grey} alt="" />
             )
          )}
       </div>

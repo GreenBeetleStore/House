@@ -370,7 +370,7 @@ a:focus {
   text-align: left;
   line-height: 142.6%;
   color: #FF6060;
-  margin: 0;
+  margin: 3px 0;
 }
 
 /* keywords 📟 src/sass/layouts/_keywords.scss */

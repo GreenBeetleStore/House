@@ -302,7 +302,6 @@ a:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  outline: 1px solid blueviolet;
 }
 .K-Sheet__info__article {
   display: flex;
@@ -310,13 +309,13 @@ a:focus {
   height: 295px;
   flex-direction: column;
   margin-bottom: 120px;
-  outline: 1px solid green;
 }
 .K-Sheet__info__article__tab {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 52px;
   background-color: #FF6060;
   border-radius: 10px;
   padding: 0 20px 0 18.65px;
@@ -349,7 +348,29 @@ a:focus {
   text-align: left;
   line-height: 142.6%;
   color: #FF6060;
-  outline: 1px solid tomato;
+}
+.K-Sheet__info__article__equipments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  width: 94%;
+  height: 249px;
+  padding: 40px 12px 53px 20px;
+  margin-top: -20px;
+  z-index: -1;
+}
+.K-Sheet__info__article__equipments p {
+  display: flex;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  line-height: 142.6%;
+  color: #FF6060;
+  margin: 0;
 }
 
 /* keywords 📟 src/sass/layouts/_keywords.scss */
@@ -409,7 +430,7 @@ a:focus {
   background-color: #FF6060;
   color: #FFFFFF;
   border-radius: 10px;
-  padding: 3px 30px 2px 30px;
+  padding: 5px 30px 2px 30px;
   margin: 0 10px 24px 0;
 }
 
@@ -446,7 +467,6 @@ a:focus {
 .K-Sheet__keywords__rightBox__starScore {
   display: flex;
   gap: 10px;
-  outline: 1px solid salmon;
 }
 
 /* sheet 🈴 src/sass/layouts/_sheet.scss */
@@ -456,7 +476,6 @@ a:focus {
   align-items: center;
   width: 86.11%;
   margin: 0 auto;
-  outline: 1px solid orange;
 }
 
 /* Skills 🎭 src/sass/layouts/_skills.scss */

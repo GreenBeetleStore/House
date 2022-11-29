@@ -6,24 +6,36 @@ import Logements from '../mocks/logements.json'
 import Carousel from '../components/Carousel'
 import LeftBox from '../components/LeftBox'
 import RightBox from '../components/RightBox'
-import InfoSheet from '../components/InfoSheet'
+import Description from '../components/Description'
+import Equipment from '../components/Equipment'
 
 function Sheet() {
    const { id } = useParams()
    const logement = Logements.find((l) => l.id === id)
 
    return (
-      <div className="K-Sheet" key={id} >
+      <div className="K-Sheet" key={id}>
          <Carousel Picture={logement.pictures} />
          <div className="K-Sheet__keywords k-keywords">
-            <LeftBox title={logement.title} location={logement.location} tags={logement.tags} />
-            <RightBox name={logement.host.name} picture={logement.host.picture} rating={logement.rating} />
+            <LeftBox
+               title={logement.title}
+               location={logement.location}
+               tags={logement.tags}
+            />
+            <RightBox
+               name={logement.host.name}
+               picture={logement.host.picture}
+               rating={logement.rating}
+            />
          </div>
-         
-         <InfoSheet 
-            description={logement.description}
-            equipments={logement.equipments}
-         />
+
+         <div className="K-Sheet__info k-info">
+            <Description description={logement.description} />
+            <Equipment
+               key={logement.equipments}
+               equipments={logement.equipments}
+            />
+         </div>
       </div>
    )
 }

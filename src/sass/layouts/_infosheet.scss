@@ -5,7 +5,6 @@
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   outline: 1px solid blueviolet;
 
    &__article {
       display: flex;
@@ -13,13 +12,13 @@
       height: 295px;
       flex-direction: column;
       margin-bottom: 120px;
-      outline: 1px solid green;
 
       &__tab {
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          align-items: center;
+         height: 52px;
          background-color: $colorPrimari;
          border-radius: 10px;
          padding: 0 20px 0 18.65px;
@@ -54,7 +53,31 @@
             text-align: left;
             line-height: 142.6%; //26px
             color: $colorPrimari;
-            outline: 1px solid tomato;
+         }
+      }
+
+      &__equipments {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: start;
+         background-color: $colorFitxes;
+         border-radius: 10px;
+         width: 94%;
+         height: 249px;
+         padding: 40px 12px 53px 20px;
+         margin-top: -20px;
+         z-index: -1;
+
+         & p {
+            display: flex;
+            font-size: 1.25vw; // 18px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            line-height: 142.6%; //26px
+            color: $colorPrimari;
+            margin: 0;
          }
       }
    }

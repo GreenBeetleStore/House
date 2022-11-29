@@ -327,6 +327,10 @@ a:focus {
   font-weight: 500;
   line-height: 142.6%;
 }
+.K-Sheet__info__article__tab img {
+  width: 26.4px;
+  height: 15.52px;
+}
 .K-Sheet__info__article__description {
   display: flex;
   flex-direction: column;

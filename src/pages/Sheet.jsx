@@ -28,13 +28,9 @@ function Sheet() {
                rating={logement.rating}
             />
          </div>
-
          <div className="K-Sheet__info k-info">
             <Description description={logement.description} />
-            <Equipment
-               key={logement.equipments}
-               equipments={logement.equipments}
-            />
+            <Equipment key={logement.equipments} equipments={logement.equipments} />
          </div>
       </div>
    )

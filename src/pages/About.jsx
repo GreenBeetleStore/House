@@ -10,7 +10,7 @@ function About() {
       <div className="About">
          <BannerAp />
          {Data.map( trait =>
-         <Skills
+         <Skills key={trait}
             title={trait.titleTrait}
             skill={trait.skillTrait}
             />

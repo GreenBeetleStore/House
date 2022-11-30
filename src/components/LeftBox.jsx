@@ -4,7 +4,7 @@ import Tags from './Tags'
 
 function LeftBox({ title, location, tags }) {
    return (
-      <div className="K-Sheet__keywords__leftBox k-leftBox">
+      <div key={title} className="K-Sheet__keywords__leftBox k-leftBox">
          <div className="K-Sheet__keywords__leftBox__title k-title">
             <h2>{title}</h2>
          </div>

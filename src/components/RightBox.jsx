@@ -9,7 +9,7 @@ function RightBox(host, rating) {
             <p>{host.name}</p>
             <img className="k-thumbnail" src={host.picture} alt="" />
          </div>
-         <Score score={rating} />
+         <Score key={rating} score={rating} />
       </div>
    )
 }

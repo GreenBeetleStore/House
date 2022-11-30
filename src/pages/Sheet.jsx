@@ -15,21 +15,21 @@ function Sheet() {
 
    return (
       <div className="K-Sheet" key={id}>
-         <Carousel Picture={logement.pictures} />
+         <Carousel key={logement.pictures} Picture={logement.pictures} />
          <div className="K-Sheet__keywords k-keywords">
-            <LeftBox
+            <LeftBox key={logement.title}
                title={logement.title}
                location={logement.location}
                tags={logement.tags}
             />
-            <RightBox
+            <RightBox key={logement.host}
                name={logement.host.name}
                picture={logement.host.picture}
                rating={logement.rating}
             />
          </div>
          <div className="K-Sheet__info k-info">
-            <Description description={logement.description} />
+            <Description key={logement.description} description={logement.description} />
             <Equipment key={logement.equipments} equipments={logement.equipments} />
          </div>
       </div>

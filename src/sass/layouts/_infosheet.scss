@@ -43,8 +43,8 @@
          background-color: $colorFitxes;
          border-radius: 10px;
          width: 94%;
-         height: 249px;
-         padding: 40px 12px 53px 20px;
+         min-height: 249px;
+         padding: 30px 12px 30px 20px;
          margin-top: -20px;
          z-index: -1;
 
@@ -69,8 +69,8 @@
          background-color: $colorFitxes;
          border-radius: 10px;
          width: 94%;
-         height: 249px;
-         padding: 40px 12px 53px 20px;
+         min-height: 249px;
+         padding: 30px 12px 30px 20px;
          margin-top: -20px;
          z-index: -1;
 

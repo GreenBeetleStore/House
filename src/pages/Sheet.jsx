@@ -22,7 +22,7 @@ function Sheet() {
                location={logement.location}
                tags={logement.tags}
             />
-            <RightBox key={logement.host}
+            <RightBox key={logement}
                name={logement.host.name}
                picture={logement.host.picture}
                rating={logement.rating}

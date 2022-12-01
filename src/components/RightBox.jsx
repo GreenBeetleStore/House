@@ -1,8 +1,9 @@
 /* RightBox 🎁⏭ src/components/RightBox.jsx */
 
+import React from 'react'
 import Score from './Score'
 
-function RightBox(host, rating) {
+function RightBox( host, rating ) {
    return (
       <div className="K-Sheet__keywords__rightBox k-rightBox">
          <div className="K-Sheet__keywords__rightBox__owner k-owner">

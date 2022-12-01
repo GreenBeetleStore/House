@@ -32,6 +32,51 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 1180px) {
+  .K-Banner__img {
+    height: 200px;
+  }
+  .K-Banner__title {
+    top: 210px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .K-Banner__img {
+    height: 185px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .K-Banner__img {
+    height: 170px;
+  }
+  .K-Banner__title {
+    top: 220px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .K-Banner__img {
+    height: 155px;
+  }
+  .K-Banner__title {
+    top: 225px;
+  }
+}
+@media screen and (max-width: 796px) {
+  .K-Banner__img {
+    height: 140px;
+  }
+  .K-Banner__title {
+    top: 230px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .K-Banner__img {
+    height: 130px;
+  }
+  .K-Banner__title {
+    top: 235px;
+  }
+}
 /* base ·🧿· src/sass/layouts/_base.scss */
 body {
   display: flex;
@@ -177,6 +222,7 @@ code {
   border-radius: 25px;
   margin: 43px 6.94%;
   padding: 56px 3.47%;
+  outline: 1px solid salmon;
 }
 .K-Gallery > ul {
   display: flex;
@@ -186,6 +232,7 @@ code {
   margin: 0 0 0 -45px;
   column-gap: 3%;
   row-gap: 50px;
+  outline: 1px solid yellowgreen;
 }
 .K-Gallery__article {
   display: flex;
@@ -205,6 +252,7 @@ code {
   height: 340px;
   border-radius: 10px;
   object-fit: cover;
+  outline: 1px solid blue;
 }
 .K-Gallery__article__mask {
   display: flex;
@@ -214,6 +262,7 @@ code {
   margin-top: -340px;
   background: linear-gradient(180deg, #FFFFFF 0%, #000000 50%);
   opacity: 0.3;
+  outline: 1px solid orangered;
 }
 .K-Gallery__article__title {
   display: flex;
@@ -272,6 +321,8 @@ code {
   }
   .K-Gallery > ul {
     row-gap: 70px;
+    padding: 0 5px;
+    justify-content: space-between;
   }
   .K-Gallery__article {
     margin: 10px;
@@ -280,10 +331,13 @@ code {
   }
 }
 @media screen and (max-width: 1080px) {
+  .K-Gallery {
+    padding: 30px 0;
+  }
   .K-Gallery > ul {
     column-gap: 35px;
     row-gap: 70px;
-    padding: 0;
+    padding: 0 10px;
   }
   .K-Gallery__article {
     margin: 25px 0;
@@ -332,6 +386,7 @@ code {
   list-style: none;
   font-size: 1.67vw; /* Son 24px */
   font-weight: 500;
+  outline: 1px solid navy;
 }
 .K-header__menu__ul__li {
   width: 140px;
@@ -356,6 +411,37 @@ a:focus {
   background-size: 100% 2px;
 }
 
+@media screen and (max-width: 1280px) {
+  .K-header__menu__ul {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .K-header__menu__ul {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .K-header__menu__ul {
+    grid-gap: 15%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .K-header__menu__ul {
+    font-size: 20px;
+    width: 120%;
+    grid-gap: 8%;
+    margin-top: 38px;
+  }
+}
+@media screen and (max-width: 796px) {
+  .K-header__menu__ul {
+    font-size: 16px;
+    grid-gap: 5%;
+    margin-top: 35px;
+    text-transform: uppercase;
+  }
+}
 /* infosheet 🚦 src/sass/layouts/_infosheet.scss */
 .K-Sheet__info {
   display: flex;

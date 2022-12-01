@@ -42,6 +42,7 @@
          list-style: none;
          font-size: 1.67vw; /* Son 24px */
          font-weight: 500;
+         outline: 1px solid navy;
 
          &__li {
             width: 140px;
@@ -67,4 +68,41 @@
 .K-header__menu a:hover,
 a:focus {
    background-size: 100% 2px;
+}
+
+
+@media screen and (max-width: 1280px) {
+   .K-header__menu__ul {
+      font-size: 22px;
+   }
+}
+
+@media screen and (max-width: 1180px) {
+   .K-header__menu__ul {
+      font-size: 21px;
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .K-header__menu__ul {
+      grid-gap: 15%;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .K-header__menu__ul {
+      font-size: 20px;
+      width: 120%;
+      grid-gap: 8%;
+      margin-top: 38px;
+   }
+}
+
+@media screen and (max-width: 796px) {
+   .K-header__menu__ul {
+      font-size: 16px;
+      grid-gap: 5%;
+      margin-top: 35px;
+      text-transform: uppercase;
+   }
 }

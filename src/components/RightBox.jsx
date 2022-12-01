@@ -1,6 +1,5 @@
 /* RightBox 🎁⏭ src/components/RightBox.jsx */
 
-import React from 'react'
 import Score from './Score'
 
 function RightBox( host, rating ) {

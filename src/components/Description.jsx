@@ -5,7 +5,7 @@ import ArrowDown from '../assets/icons/arrowDown.svg'
 import React, { useState } from 'react'
 
 function Description({ description }) {
-   const [isDeployed, setIsDeployed] = useState(true)
+   const [isDeployed, setIsDeployed] = useState(false)
 
    return isDeployed ? (
       <div className="K-Sheet__info__article">

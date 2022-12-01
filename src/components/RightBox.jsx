@@ -2,12 +2,12 @@
 
 import Score from './Score'
 
-function RightBox( host, rating ) {
+function RightBox({ name, picture, rating }) {
    return (
       <div className="K-Sheet__keywords__rightBox k-rightBox">
          <div className="K-Sheet__keywords__rightBox__owner k-owner">
-            <p>{host.name}</p>
-            <img className="k-thumbnail" src={host.picture} alt="" />
+            <p>{name}</p>
+            <img className="k-thumbnail" src={picture} alt="Propriétaire." />
          </div>
          <Score key={rating} score={rating} />
       </div>

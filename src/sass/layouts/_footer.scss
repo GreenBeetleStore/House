@@ -26,3 +26,47 @@
       margin: 0 auto;
    }
 }
+
+@media screen and (max-width: 1280px) {
+   .K-Footer {
+      &__logo {
+         width: 130px;
+         height: auto;
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .K-Footer {
+      &__logo {
+         width: 105px;
+         height: auto;
+      }
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .K-Footer {
+      &__logo {
+         width: 100px;
+         height: auto;
+      }
+      &__copyright {
+         width: 350px;
+         font-size: 14px;
+      }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .K-Footer {
+      &__logo {
+         width: 90px;
+         height: auto;
+      }
+      &__copyright {
+         width: 350px;
+         font-size: 12px;
+      }
+   }
+}

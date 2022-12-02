@@ -31,53 +31,101 @@
    }
 }
 
-@media screen and (max-width: 1180px) {
-   .K-Banner__img {
-      height: 200px;
-   }
-   .K-Banner__title {
-      top: 210px;
+@media screen and (max-width: 1280px) {
+   .K-Banner {
+      &__img {
+         height: 210px;
+      }
+      &__title {
+         top: 200px;
+      }
    }
 }
 
-@media screen and (max-width: 1080px) {
-   .K-Banner__img {
-      height: 185px;
+@media screen and (max-width: 1024px) {
+   .K-Banner {
+      height: 200px;
+      margin-bottom: 50px;
+      &__img {
+         height: 190px;
+      }
+      &__title {
+         top: 200px;
+      }
    }
 }
 
 @media screen and (max-width: 992px) {
-   .K-Banner__img {
+   .K-Banner {
+      height: 180px;
+      margin-bottom: 40px;
+      &__img {
+         height: 170px;
+      }
+      &__title {
+         top: 190px;
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .K-Banner {
       height: 170px;
-   }
-   .K-Banner__title {
-      top: 220px;
-   }
-}
-
-@media screen and (max-width: 880px) {
-   .K-Banner__img {
-      height: 155px;
-   }
-   .K-Banner__title {
-      top: 225px;
+      margin-bottom: 35px;
+      &__img {
+         height: 160px;
+      }
+      &__title {
+         top: 185px;
+      }
    }
 }
 
-@media screen and (max-width: 796px) {
-   .K-Banner__img {
-      height: 140px;
-   }
-   .K-Banner__title {
-      top: 230px;
+@media screen and (max-width: 768px) {
+   .K-Banner {
+      height: 170px;
+      margin-bottom: 30px;
+      &__img {
+         height: 150px;
+      }
+      &__title {
+         top: 160px;
+      }
    }
 }
 
-@media screen and (max-width: 680px) {
-   .K-Banner__img {
-      height: 130px;
+@media screen and (max-width: 600px) {
+   .K-Banner {
+      height: 160px;
+      margin-bottom: 30px;
+      &__img {
+         height: 140px;
+      }
+      &__title {
+         top: 160px;
+      }
    }
-   .K-Banner__title {
-      top: 235px;
+}
+
+@media screen and (max-width: 480px) {
+   .K-Banner {
+      width: 88.725%;
+      height: 125px;
+      margin: 0 auto 26px auto;
+      padding: 0;
+      &__img {
+         height: 111px;
+         margin: 0;
+         border-radius: 10px;
+         object-fit: cover;
+      }
+      &__title {
+         width: 217px;
+         height: 48px;
+         font-size: 24px;
+         text-align: left;
+         top: 105px;
+         left: 50px;
+      }
    }
 }

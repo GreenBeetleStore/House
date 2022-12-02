@@ -42,7 +42,6 @@
          list-style: none;
          font-size: 1.67vw; /* Son 24px */
          font-weight: 500;
-         outline: 1px solid navy;
 
          &__li {
             width: 140px;
@@ -70,26 +69,37 @@ a:focus {
    background-size: 100% 2px;
 }
 
-
 @media screen and (max-width: 1280px) {
+   .K-header__logo {
+      width: 95%;
+   }
    .K-header__menu__ul {
       font-size: 22px;
    }
 }
 
 @media screen and (max-width: 1180px) {
+   .K-header__logo {
+      width: 90%;
+   }
    .K-header__menu__ul {
       font-size: 21px;
    }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
+   .K-header__logo {
+      width: 88%;
+   }
    .K-header__menu__ul {
       grid-gap: 15%;
    }
 }
 
 @media screen and (max-width: 992px) {
+   .K-header__logo {
+      width: 85%;
+   }
    .K-header__menu__ul {
       font-size: 20px;
       width: 120%;
@@ -98,11 +108,54 @@ a:focus {
    }
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 800px) {
+   .K-header__logo {
+      width: 80%;
+   }
    .K-header__menu__ul {
       font-size: 16px;
       grid-gap: 5%;
       margin-top: 35px;
       text-transform: uppercase;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .K-header {
+      padding: 25px 0;
+   }
+   .K-header__logo {
+      width: 65%;
+   }
+   .K-header__menu__ul {
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .K-header__logo {
+      width: 60%;
+   }
+   .K-header__menu__ul {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .K-header {
+      padding: 18px 0;
+      &__menu {
+         width: 160px;
+         margin-right: 0px;
+      }
+   }
+   .K-header__logo {
+      width: 145px;
+      height: 55px;
+      margin-left: 5px;
+   }
+   .K-header__menu__ul {
+      font-size: 12px;
+      grid-gap: 1%;
    }
 }

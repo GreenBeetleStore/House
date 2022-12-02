@@ -11,11 +11,13 @@
       align-items: center;
       text-align: right;
       width: 48.15%; // 597px
-      height: max-content;
+      height: 263px;
       font-size: 20.16vw; // 288px
       font-weight: 700;
       line-height: 410.69px;
-      margin: 0 auto 0 auto;
+      margin: 125px auto 66px auto;
+      padding: 0;
+      outline: 1px solid green;
    }
 
    &__subTitle {
@@ -26,6 +28,8 @@
       font-weight: 500;
       line-height: 142.6%; // 51px
       margin: 0 auto 182px auto;
+      
+      outline: 1px solid orangered;
    }
 
    > a {
@@ -40,6 +44,9 @@
       background-repeat: no-repeat;
       background-size: 0% 2px;
       transition: background-size 0.3s;
+
+      
+      outline: 1px solid blueviolet;
    }
 
    > a:hover,

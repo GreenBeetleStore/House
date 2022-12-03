@@ -8,8 +8,6 @@
    height: auto;
    margin: 33px auto 46px auto;
 
-   outline: 1px solid salmon;
-
    &__article {
       display: flex;
       justify-content: space-between;
@@ -36,7 +34,7 @@
    }
 
    &__info {
-      width: 79.4%;
+      width: 79.2%;
       height: min-content;
       margin: -8px auto 0 auto;
       padding: 22px 18px;
@@ -48,5 +46,166 @@
       line-height: 142.6%; // 34px
       background-color: $colorFitxes;
       border-radius: 5px;
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .K-Skills__info {
+      width: 79%;
+   }
+}
+
+@media screen and (max-width: 1168px) {
+   .K-Skills__info {
+      width: 78.7%;
+   }
+}
+
+@media screen and (max-width: 1110px) {
+   .K-Skills__info {
+      width: 78.6%;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .K-Skills__info {
+      width: 78.45%;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .K-Skills__info {
+      width: 78%;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .K-Skills__info {
+      width: 77.55%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .K-Skills__info {
+      width: 76.7%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .K-Skills {
+      padding-bottom: 20px;
+      &__article {
+         width: 100%;
+         margin-bottom: -25px;
+         & h3 {
+            font-size: 16px;
+         }
+         & img {
+            width: 18px;
+            height: 12px;
+         }
+      }
+      &__info {
+         width: 94.24%;
+         margin: 20px 0 -25px 0;
+         height: 143.65px;
+         font-size: 15px;
+      }
+   }
+}
+
+@media screen and (max-width: 710px) {
+   .K-Skills {
+      &__info {
+         width: 93.65%;
+      }
+   }
+}
+
+@media screen and (max-width: 640px) {
+   .K-Skills {
+      &__info {
+         width: 93%;
+      }
+   }
+}
+
+@media screen and (max-width: 580px) {
+   .K-Skills {
+      &__article {
+         & h3 {
+            font-size: 15px;
+         }
+         & img {
+            width: 17px;
+            height: 11px;
+         }
+      }
+      &__info {
+         width: 92.5%;
+         font-size: 14px;
+      }
+   }
+}
+
+@media screen and (max-width: 540px) {
+   .K-Skills {
+      &__info {
+         width: 91.7%;
+      }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .K-Skills {
+      &__article {
+         height: 30px;
+         & h3 {
+            font-size: 14px;
+         }
+         & img {
+            width: 16px;
+            height: 10px;
+         }
+      }
+      &__info {
+         width: 90.6%;
+         font-size: 13px;
+      }
+   }
+}
+
+@media screen and (max-width: 440px) {
+   .K-Skills {
+      &__article {
+         & h3 {
+            font-size: 13px;
+         }
+         & img {
+            width: 15.2px;
+            height: 8.98px;
+         }
+      }
+      &__info {
+         width: 89.9%;
+         font-size: 13px;
+      }
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .K-Skills {
+      &__info {
+         width: 88.5%;
+      }
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .K-Skills {
+      &__info {
+         width: 88%;
+         font-size: 12px;
+      }
    }
 }

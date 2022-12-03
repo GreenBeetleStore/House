@@ -205,18 +205,17 @@ code {
   font-weight: 700;
   line-height: 410.69px;
   margin: 125px auto 66px auto;
-  padding: 0;
-  outline: 1px solid green;
+  padding: 0 0 0 5%;
 }
 .K-Error__subTitle {
   display: flex;
   align-items: flex-end;
+  text-align: center;
   font-size: 2.52vw;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
   margin: 0 auto 182px auto;
-  outline: 1px solid orangered;
 }
 .K-Error > a {
   font-size: 1.26vw;
@@ -230,13 +229,98 @@ code {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size 0.3s;
-  outline: 1px solid blueviolet;
 }
 .K-Error > a:hover,
 .K-Error a:focus {
   background-size: 100% 2px;
 }
 
+@media screen and (max-width: 1280px) {
+  .K-Error__msg404 {
+    margin: 100px auto 56px auto;
+  }
+  .K-Error__subTitle {
+    margin: 0 auto 150px auto;
+  }
+  .K-Error > a {
+    margin: 0 auto 100px auto;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .K-Error > a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .K-Error__msg404 {
+    margin: 90px auto 55px auto;
+  }
+  .K-Error__subTitle {
+    margin: 0 auto 130px auto;
+  }
+  .K-Error > a {
+    margin: 0 auto 80px auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .K-Error__msg404 {
+    margin: 80px auto 50px auto;
+  }
+  .K-Error__subTitle {
+    margin: 0 auto 110px auto;
+  }
+  .K-Error > a {
+    margin: 0 auto 70px auto;
+  }
+}
+@media screen and (max-width: 714px) {
+  .K-Error__subTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .K-Error__msg404 {
+    margin: 75px auto -45px auto;
+  }
+  .K-Error__subTitle {
+    margin: 0 auto 150px auto;
+  }
+  .K-Error > a {
+    margin: 0 auto 215px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .K-Error__msg404 {
+    font-size: 96px;
+    padding: 0 0 0 2%;
+    margin: 75px auto -55px auto;
+  }
+  .K-Error__subTitle {
+    width: 330px;
+    margin: 0 auto 140px auto;
+    line-height: 25.67px;
+  }
+  .K-Error > a {
+    margin: 0 auto 205px auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .K-Error__msg404 {
+    width: 198px;
+    height: 99px;
+    margin: 165px auto 12px auto;
+    padding: 0;
+  }
+  .K-Error__subTitle {
+    width: 260px;
+    height: 52px;
+    padding: 0;
+    margin: 0 58px 133px 58px;
+  }
+  .K-Error > a {
+    margin: 0 auto 215px auto;
+  }
+}
 /* footer 👣 src/sass/layouts/_footer.scss */
 .K-Footer {
   display: flex;

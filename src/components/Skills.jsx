@@ -10,14 +10,18 @@ function Skills({ title, skill }) {
    return isTrigger ? (
       <div className="K-Skills">
          <div className="K-Skills__article">
-            <h3 className="articleTitle" key={title}>{title}</h3>
+            <h3 className="articleTitle" key={title}>
+               {title}
+            </h3>
             <img
                src={ArrowUp}
                alt="Flèche en haut"
                onClick={() => setIsTrigger(false)}
             />
          </div>
-         <p className="K-Skills__info" key={skill}>{skill}</p>
+         <p className="K-Skills__info" key={skill}>
+            {skill}
+         </p>
       </div>
    ) : (
       <div className="K-Skills">

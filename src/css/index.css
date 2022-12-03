@@ -122,6 +122,35 @@
     left: 50px;
   }
 }
+/* bannerAp 🎏 src/sass/layouts/_bannerAp.scss */
+.K-BannerAp {
+  margin: 0 6.94%;
+  width: 86.11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  border-radius: 25px;
+  outline: 1px solid salmon;
+}
+.K-BannerAp__img {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.K-BannerAp__title {
+  display: flex;
+  position: absolute;
+  top: 210px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3.35vw; /* 48px */
+  font-weight: 500;
+}
+
 /* base ·🧿· src/sass/layouts/_base.scss */
 body {
   display: flex;
@@ -1040,7 +1069,8 @@ a:focus {
   align-items: center;
   width: 86.11%;
   height: auto;
-  margin: 33px auto 33px auto;
+  margin: 33px auto 46px auto;
+  outline: 1px solid salmon;
 }
 .K-Skills__article {
   display: flex;

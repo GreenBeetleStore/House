@@ -5,11 +5,11 @@ import aboutBanner from '../assets/images/banner02.webp'
 
 const BannerAp = () => {
    return (
-      <section className="K-Banner">
+      <section className="K-BannerAp">
          <img
             src={aboutBanner}
             alt="Montagnes enneigées"
-            className="K-Banner__img"
+            className="K-BannerAp __img"
          />
       </section>
    )

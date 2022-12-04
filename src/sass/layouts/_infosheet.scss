@@ -12,13 +12,13 @@
       height: 295px;
       flex-direction: column;
       margin-bottom: 120px;
-      outline: 1px solid tomato;
 
       &__tab {
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          align-items: center;
+         width: 94%;
          height: 52px;
          background-color: $colorPrimari;
          border-radius: 10px;
@@ -44,14 +44,13 @@
          background-color: $colorFitxes;
          border-radius: 10px;
          width: 94%;
-         height: min-content;
-         padding: 30px 12px 30px 20px;
+         height: 249px;
+         padding: 30px 20px 30px 20px;
          margin-top: -20px;
          z-index: -1;
 
          & p {
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
             font-size: 1.25vw; // 18px;
             font-style: normal;
@@ -70,8 +69,8 @@
          background-color: $colorFitxes;
          border-radius: 10px;
          width: 94%;
-         height: min-content;
-         padding: 30px 12px 30px 20px;
+         height: 249px;
+         padding: 30px 20px 30px 20px;
          margin-top: -20px;
          z-index: -1;
 
@@ -92,10 +91,8 @@
 @media screen and (max-width: 1280px) {
    .K-Sheet__info {
       &__article {
-         width: 46.9%;
-         padding: 0;
          &__tab {
-            height: 50px;   
+            height: 48px;
             & h4 {
                font-size: 17px;
             }
@@ -104,11 +101,9 @@
                height: 15px;
             }
          }
-         &__description, &__equipments {
-            width: 93.55%;
-            align-self: center;  
-            
-            outline: 1px solid blueviolet;
+         &__description,
+         &__equipments {
+            height: 235px;
             & p {
                font-size: 17px;
             }
@@ -118,10 +113,54 @@
 }
 
 @media screen and (max-width: 1180px) {
-   
+   .K-Sheet__info {
+      &__article {
+         &__tab {
+            height: 44px;
+            & h4 {
+               font-size: 16px;
+            }
+            & img {
+               width: 25px;
+               height: 14px;
+            }
+         }
+         &__description,
+         &__equipments {
+            height: 220px;
+            & p {
+               font-size: 16px;
+            }
+         }
+      }
+   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+   .K-Sheet__info {
+      &__article {
+         &__tab {
+            height: 40px;
+            & h4 {
+               font-size: 15px;
+            }
+            & img {
+               width: 24px;
+               height: 13px;
+            }
+         }
+         &__description,
+         &__equipments {
+            height: 220px;
+            & p {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
    .K-Sheet__info {
       flex-direction: column;
       height: auto;
@@ -131,22 +170,24 @@
          height: min-content;
          margin-bottom: 20px;
          &__tab {
-            height: 36px;
+            margin: 0;
+            width: 96.5%;
+            height: 38px;
             background-color: $colorPrimari;
-            border-radius: 7px;
+            border-radius: 8px;
             padding: 0 10px 0 14px;
             & h4 {
                font-size: 15px;
             }
             & img {
-               width: 21.4px;
-               height: 10.52px;
+               width: 22.4px;
+               height: 11.52px;
             }
          }
          &__description,
          &__equipments {
             border-radius: 7px;
-            width: 100%;
+            width: 100.3%;
             height: auto;
             padding: 30px 0px 30px 0px;
             & p {
@@ -155,6 +196,28 @@
                padding: 0 14px;
                margin: 0;
             }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 640px) {
+   .K-Sheet__info {
+      &__article {
+         &__description,
+         &__equipments {
+            width: 101.3%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .K-Sheet__info {
+      &__article {
+         &__description,
+         &__equipments {
+            width: 102%;
          }
       }
    }
@@ -178,6 +241,7 @@
          }
          &__description,
          &__equipments {
+            width: 102.1%;
             border-radius: 5px;
             & p {
                font-size: 13px;
@@ -206,6 +270,7 @@
          }
          &__description,
          &__equipments {
+            width: 102.5%;
             border-radius: 5px;
             & p {
                font-size: 12px;

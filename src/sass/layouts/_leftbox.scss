@@ -58,35 +58,45 @@
 }
 
 @media screen and (max-width: 1340px) {
-   .K-Sheet__keywords__leftBox__tags__labels {
-      & p {
-         height: 24px;
-         padding: 5px 29px 0px 29px;
-         font-size: 13.2px;
-         border-radius: 9px;
+   .K-Sheet__keywords__leftBox {
+      margin-top: -30px;
+      &__tags {
+         &__labels {
+            & p {
+               height: 24px;
+               padding: 5px 29px 0px 29px;
+               font-size: 13.2px;
+               border-radius: 9px;
+            }
+         }
       }
    }
 }
 
 @media screen and (max-width: 1240px) {
-   .K-Sheet__keywords__leftBox__tags__labels {
-      & p {
-         height: 23px;
-         padding: 4px 28px -1px 28px;
-         font-size: 12.6px;
-         border-radius: 8px;
+   .K-Sheet__keywords__leftBox {
+      margin-top: -30px;
+      &__tags {
+         &__labels {
+            & p {
+               height: 23px;
+               padding: 4px 28px -1px 28px;
+               font-size: 12.6px;
+               border-radius: 8px;
+            }
+         }
       }
    }
 }
 
 @media screen and (max-width: 1110px) {
    .K-Sheet__keywords__leftBox {
+      margin-top: -30px;
       &__region {
          font-size: 14px;
       }
       &__tags {
          width: 100%;
-         outline: 1px solid blue;
          &__labels {
             & p {
                font-size: 12.2px;
@@ -100,13 +110,16 @@
 }
 
 @media screen and (max-width: 768px) {
-   .K-Sheet__keywords__leftBox__tags {
-      &__labels {
-         & p {
-            font-size: 12px;
-            height: 21px;
-            padding: 3px 20px 0px 20px;
-            border-radius: 7px;
+   .K-Sheet__keywords__leftBox {
+      margin-top: -25px;
+      &__tags {
+         &__labels {
+            & p {
+               font-size: 12px;
+               height: 21px;
+               padding: 3px 20px 0px 20px;
+               border-radius: 7px;
+            }
          }
       }
    }
@@ -120,7 +133,6 @@
          font-size: 20px;
          line-height: 142.6%;
          height: min-content;
-         outline: 1px solid salmon;
       }
       &__region {
          font-size: 14px;

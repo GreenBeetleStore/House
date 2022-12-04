@@ -239,7 +239,7 @@ code {
   .K-Sheet__carousel__arrows__arrowRight img,
 .K-Sheet__carousel__photo__arrows__arrowRight img {
     width: 42.5px;
-    margin-right: 20px;
+    padding-left: 6px;
   }
   .K-Sheet__carousel__pageNumber,
 .K-Sheet__carousel__photo__pageNumber {

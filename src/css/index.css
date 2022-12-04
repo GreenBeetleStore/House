@@ -1067,6 +1067,7 @@ a:focus {
   height: 295px;
   flex-direction: column;
   margin-bottom: 120px;
+  outline: 1px solid tomato;
 }
 .K-Sheet__info__article__tab {
   display: flex;
@@ -1132,9 +1133,33 @@ a:focus {
   text-align: left;
   line-height: 142.6%;
   color: #FF6060;
-  margin: 3px 0;
+  margin: 1px 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .K-Sheet__info__article {
+    width: 46.9%;
+    padding: 0;
+  }
+  .K-Sheet__info__article__tab {
+    height: 50px;
+  }
+  .K-Sheet__info__article__tab h4 {
+    font-size: 17px;
+  }
+  .K-Sheet__info__article__tab img {
+    width: 26px;
+    height: 15px;
+  }
+  .K-Sheet__info__article__description, .K-Sheet__info__article__equipments {
+    width: 93.55%;
+    align-self: center;
+    outline: 1px solid blueviolet;
+  }
+  .K-Sheet__info__article__description p, .K-Sheet__info__article__equipments p {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 600px) {
   .K-Sheet__info {
     flex-direction: column;
@@ -1169,6 +1194,51 @@ a:focus {
     font-size: 15px;
     line-height: 142.6%;
     padding: 0 14px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .K-Sheet__info__article__tab {
+    height: 33px;
+    background-color: #FF6060;
+    border-radius: 6px;
+    padding: 0 9px 0 12.5px;
+  }
+  .K-Sheet__info__article__tab h4 {
+    font-size: 14px;
+  }
+  .K-Sheet__info__article__tab img {
+    width: 18.3px;
+    height: 9.74px;
+  }
+  .K-Sheet__info__article__description, .K-Sheet__info__article__equipments {
+    border-radius: 5px;
+  }
+  .K-Sheet__info__article__description p, .K-Sheet__info__article__equipments p {
+    font-size: 13px;
+    padding: 0 12.5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .K-Sheet__info__article__tab {
+    height: 30px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    padding: 0 8px 0 11.51px;
+  }
+  .K-Sheet__info__article__tab h4 {
+    font-size: 13px;
+  }
+  .K-Sheet__info__article__tab img {
+    width: 15.2px;
+    height: 8.96px;
+  }
+  .K-Sheet__info__article__description, .K-Sheet__info__article__equipments {
+    border-radius: 5px;
+  }
+  .K-Sheet__info__article__description p, .K-Sheet__info__article__equipments p {
+    font-size: 12px;
+    padding: 0 11.51px;
   }
 }
 /* keywords 📟 src/sass/layouts/_keywords.scss */

@@ -12,6 +12,7 @@
       height: 295px;
       flex-direction: column;
       margin-bottom: 120px;
+      outline: 1px solid tomato;
 
       &__tab {
          display: flex;
@@ -82,10 +83,42 @@
             text-align: left;
             line-height: 142.6%; //26px
             color: $colorPrimari;
-            margin: 3px 0;
+            margin: 1px 0;
          }
       }
    }
+}
+
+@media screen and (max-width: 1280px) {
+   .K-Sheet__info {
+      &__article {
+         width: 46.9%;
+         padding: 0;
+         &__tab {
+            height: 50px;   
+            & h4 {
+               font-size: 17px;
+            }
+            & img {
+               width: 26px;
+               height: 15px;
+            }
+         }
+         &__description, &__equipments {
+            width: 93.55%;
+            align-self: center;  
+            
+            outline: 1px solid blueviolet;
+            & p {
+               font-size: 17px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1180px) {
+   
 }
 
 @media screen and (max-width: 600px) {
@@ -120,6 +153,63 @@
                font-size: 15px;
                line-height: 142.6%;
                padding: 0 14px;
+               margin: 0;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .K-Sheet__info {
+      &__article {
+         &__tab {
+            height: 33px;
+            background-color: $colorPrimari;
+            border-radius: 6px;
+            padding: 0 9px 0 12.5px;
+            & h4 {
+               font-size: 14px;
+            }
+            & img {
+               width: 18.3px;
+               height: 9.74px;
+            }
+         }
+         &__description,
+         &__equipments {
+            border-radius: 5px;
+            & p {
+               font-size: 13px;
+               padding: 0 12.5px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .K-Sheet__info {
+      &__article {
+         &__tab {
+            height: 30px;
+            background-color: $colorPrimari;
+            border-radius: 5px;
+            padding: 0 8px 0 11.51px;
+            & h4 {
+               font-size: 13px;
+            }
+            & img {
+               width: 15.2px;
+               height: 8.96px;
+            }
+         }
+         &__description,
+         &__equipments {
+            border-radius: 5px;
+            & p {
+               font-size: 12px;
+               padding: 0 11.51px;
             }
          }
       }

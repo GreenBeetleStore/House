@@ -176,7 +176,8 @@ code {
 }
 
 /* carousel 🎠 src/sass/layouts/_carousel.scss */
-.K-Sheet__carousel, .K-Sheet__carousel__photo {
+.K-Sheet__carousel,
+.K-Sheet__carousel__photo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,24 +189,28 @@ code {
   background-repeat: no-repeat;
   background-position: center;
 }
-.K-Sheet__carousel__arrows, .K-Sheet__carousel__photo__arrows {
+.K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 80px;
 }
-.K-Sheet__carousel__arrows__arrowLeft, .K-Sheet__carousel__photo__arrows__arrowLeft {
+.K-Sheet__carousel__arrows__arrowLeft,
+.K-Sheet__carousel__photo__arrows__arrowLeft {
   width: 46.68px;
   height: 79.2px;
   margin-left: 23.36px;
 }
-.K-Sheet__carousel__arrows__arrowRight, .K-Sheet__carousel__photo__arrows__arrowRight {
+.K-Sheet__carousel__arrows__arrowRight,
+.K-Sheet__carousel__photo__arrows__arrowRight {
   width: 46.68px;
   height: 79.2px;
   margin-right: 23.36px;
 }
-.K-Sheet__carousel__pageNumber, .K-Sheet__carousel__photo__pageNumber {
+.K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
   position: absolute;
   top: 500px;
   width: 24px;
@@ -217,6 +222,179 @@ code {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1280px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 390px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    padding-top: 10px;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 42.5px;
+    margin-left: -2px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 42.5px;
+    margin-right: 20px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    top: 475px;
+    height: 52px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 365px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    padding-top: 15px;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 40px;
+    margin-left: 0px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 40px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 15px;
+    top: 450px;
+    height: 52px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 340px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    padding-top: 15px;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 36px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 36px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 14.5px;
+    top: 425px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 320px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    height: 60px;
+    padding: 20px 0 0 0;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 32px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 32px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 14.5px;
+    top: 360px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 300px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    height: 60px;
+    padding: 30px 0 0 0;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 26px;
+    margin-left: -6px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 26px;
+    padding-left: 27px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 14px;
+    top: 340px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 280px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    padding-top: 40px;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 22px;
+    margin-left: -12px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 22px;
+    padding-left: 39px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 13px;
+    top: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .K-Sheet__carousel,
+.K-Sheet__carousel__photo {
+    height: 255px;
+  }
+  .K-Sheet__carousel__arrows,
+.K-Sheet__carousel__photo__arrows {
+    padding-top: 40px;
+  }
+  .K-Sheet__carousel__arrows__arrowLeft img,
+.K-Sheet__carousel__photo__arrows__arrowLeft img {
+    width: 19.8px;
+    margin-left: -17.16px;
+  }
+  .K-Sheet__carousel__arrows__arrowRight img,
+.K-Sheet__carousel__photo__arrows__arrowRight img {
+    width: 19.8px;
+    padding-left: 44.16px;
+  }
+  .K-Sheet__carousel__pageNumber,
+.K-Sheet__carousel__photo__pageNumber {
+    font-size: 12px;
+    top: 300px;
+  }
+}
 /* Error 🐛 src/sass/layouts/_error.scss */
 .K-Error {
   display: flex;
@@ -1018,6 +1196,29 @@ a:focus {
   margin: 0 10px 24px 0;
 }
 
+@media screen and (max-width: 1340px) {
+  .K-Sheet__keywords__leftBox__tags__labels p {
+    height: 24px;
+    padding: 5px 29px 0px 29px;
+    outline: 1px solid navy;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .K-Sheet__keywords__leftBox__tags__labels p {
+    height: 23px;
+    padding: 4px 28px -1px 28px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .K-Sheet__keywords__leftBox__region {
+    font-size: 14px;
+  }
+  .K-Sheet__keywords__leftBox__tags__labels p {
+    height: 22.5px;
+    font-size: 12.6px;
+    padding: 4px 27px -1px 27px;
+  }
+}
 /* rightbox 🎁⏭ src/sass/layouts/_rightbox.scss */
 .K-Sheet__keywords__rightBox {
   display: flex;
@@ -1043,16 +1244,42 @@ a:focus {
   font-weight: 500;
   line-height: 25.67px;
 }
-.K-Sheet__keywords__rightBox .k-thumbnail {
+.K-Sheet__keywords__rightBox__k-thumbnail {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  outline: 1px solid navy;
 }
 .K-Sheet__keywords__rightBox__starScore {
   display: flex;
   gap: 10px;
 }
 
+@media screen and (max-width: 1340px) {
+  .K-Sheet__keywords__rightBox p {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .K-Sheet__keywords__rightBox p {
+    width: 93px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .K-Sheet__keywords__rightBox p {
+    width: 91px;
+    font-size: 14px;
+  }
+  .K-Sheet__keywords__rightBox__k-thumbnail {
+    width: 48px;
+    height: 48px;
+  }
+  .K-Sheet__keywords__rightBox__starScore img {
+    width: 26px;
+    height: 26px;
+  }
+}
 /* sheet 🈴 src/sass/layouts/_sheet.scss */
 .K-Sheet {
   display: flex;

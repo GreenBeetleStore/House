@@ -7,7 +7,7 @@ function RightBox({ name, picture, rating }) {
       <div className="K-Sheet__keywords__rightBox k-rightBox">
          <div className="K-Sheet__keywords__rightBox__owner k-owner">
             <p>{name}</p>
-            <img className="k-thumbnail" src={picture} alt="Propriétaire." />
+            <img className="K-Sheet__keywords__rightBox__k-thumbnail" src={picture} alt="Propriétaire." />
          </div>
          <Score key={rating} score={rating} />
       </div>

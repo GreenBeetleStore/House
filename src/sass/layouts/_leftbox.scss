@@ -56,3 +56,37 @@
       }
    }
 }
+
+@media screen and (max-width: 1340px) {
+   .K-Sheet__keywords__leftBox__tags__labels {
+      & p {
+         height: 24px;
+         padding: 5px 29px 0px 29px;
+         outline: 1px solid navy;
+      }
+   }
+}
+
+@media screen and (max-width: 1240px) {
+   .K-Sheet__keywords__leftBox__tags__labels {
+      & p {
+         height: 23px;
+         padding: 4px 28px -1px 28px;
+      }
+   }
+}
+
+@media screen and (max-width: 1110px) {
+   .K-Sheet__keywords__leftBox {
+      &__region {
+         font-size: 14px;
+      }
+      &__tags__labels {
+         & p {
+            height: 22.5px;
+            font-size: 12.6px;
+            padding: 4px 27px -1px 27px;
+         }
+      }
+   }
+}

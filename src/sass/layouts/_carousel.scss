@@ -1,30 +1,29 @@
 /* carousel 🎠 src/sass/layouts/_carousel.scss */
 
-.K-Sheet__carousel, .K-Sheet__carousel__photo {
+.K-Sheet__carousel,
+.K-Sheet__carousel__photo {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 100%;  // 1240px
+   width: 100%; // 1240px
    height: 415px;
    border-radius: 25px;
    mix-blend-mode: normal;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-      
+
    &__arrows {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
       height: 80px;
-
       &__arrowLeft {
          width: 46.68px;
          height: 79.2px;
          margin-left: 23.36px;
       }
-
       &__arrowRight {
          width: 46.68px;
          height: 79.2px;
@@ -42,5 +41,157 @@
       font-style: normal;
       line-height: 25.67px;
       color: $colorSecundari;
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 390px;
+      &__arrows {
+         padding-top: 10px;
+         &__arrowLeft img {
+            width: 42.5px;
+            margin-left: -2px;
+         }
+         &__arrowRight img {
+            width: 42.5px;
+            margin-right: 20px;
+         }
+      }
+      &__pageNumber {
+         top: 475px;
+         height: 52px;
+      }
+   }
+}
+
+@media screen and (max-width: 1180px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 365px;
+      &__arrows {
+         padding-top: 15px;
+         &__arrowLeft img {
+            width: 40px;
+            margin-left: 0px;
+         }
+         &__arrowRight img {
+            width: 40px;
+         }
+      }
+      &__pageNumber {
+         font-size: 15px;
+         top: 450px;
+         height: 52px;
+      }
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 340px;
+      &__arrows {
+         padding-top: 15px;
+         &__arrowLeft img {
+            width: 36px;
+         }
+         &__arrowRight img {
+            width: 36px;
+         }
+      }
+      &__pageNumber {
+         font-size: 14.5px;
+         top: 425px;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 320px;
+      &__arrows {
+         height: 60px;
+         padding: 20px 0 0 0;
+         &__arrowLeft img {
+            width: 32px;
+         }
+         &__arrowRight img {
+            width: 32px;
+         }
+      }
+      &__pageNumber {
+         font-size: 14.5px;
+         top: 360px;
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 300px;
+      &__arrows {
+         height: 60px;
+         padding: 30px 0 0 0;
+         &__arrowLeft img {
+            width: 26px;
+            margin-left: -6px;
+         }
+         &__arrowRight img {
+            width: 26px;
+            padding-left: 27px;
+         }
+      }
+      &__pageNumber {
+         font-size: 14px;
+         top: 340px;
+      }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 280px;
+      &__arrows {
+         padding-top: 40px;
+         &__arrowLeft img {
+            width: 22px;
+            margin-left: -12px;
+         }
+         &__arrowRight img {
+            width: 22px;
+            padding-left: 39px;
+         }
+      }
+      &__pageNumber {
+         font-size: 13px;
+         top: 320px;
+      }
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .K-Sheet__carousel,
+   .K-Sheet__carousel__photo {
+      height: 255px;
+      &__arrows {
+         padding-top: 40px;
+         &__arrowLeft img {
+            width: 19.8px;
+            margin-left: -17.16px;
+         }
+         &__arrowRight img {
+            width: 19.8px;
+            padding-left: 44.16px;
+         }
+      }
+      &__pageNumber {
+         font-size: 12px;
+         top: 300px;
+      }
    }
 }

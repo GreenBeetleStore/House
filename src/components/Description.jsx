@@ -11,15 +11,22 @@ function Description({ description }) {
       <div className="K-Sheet__info__article">
          <div className="K-Sheet__info__article__tab">
             <h4>Description</h4>
-            <img src={ArrowDown} alt="Flèche vers le bas" onClick={() => setIsDeployed(false)} />
+            <img
+               src={ArrowDown}
+               alt="Flèche vers le bas"
+               onClick={() => setIsDeployed(false)}
+            />
          </div>
-         
       </div>
    ) : (
       <div className="K-Sheet__info__article">
          <div className="K-Sheet__info__article__tab">
             <h4>Description</h4>
-            <img src={ArrowUp} alt="Flèche vers le haut" onClick={() => setIsDeployed(true)} />
+            <img
+               src={ArrowUp}
+               alt="Flèche vers le haut"
+               onClick={() => setIsDeployed(true)}
+            />
          </div>
          <div className="K-Sheet__info__article__description">
             <p>{description}</p>

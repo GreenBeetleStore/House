@@ -13,7 +13,8 @@ function Score({ score }) {
                <img key={index} src={Orange} alt="étoile orange" />
             ) : (
                <img key={index} src={Grey} alt="étoile grise" />
-            ))}
+            )
+         )}
       </div>
    )
 }

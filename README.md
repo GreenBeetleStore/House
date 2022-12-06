@@ -1,10 +1,39 @@
 # Kasa
 
-<img src = "./src/assets/images/logo.png"/>
+<img src = "./src/assets/images/IntroKasa.png"/>
 
 # P7 · Créez une application web de location immobilière avec React
 
 <img src = "./src/assets/images/PortadaKasa.png"/>
+
+## Auteur
+
+### Repo Développement : <a href="https://github.com/GreenBeetleStore/P7-House.git">Xavier Torta, the Green Beetle </a>
+
+<img src = "./src/assets/images/GreenBeetleLogo.png"/>
+
+## Presentation
+
+· Vous trouverez ci-dessous la présentation de l'exposition du projet.
+
+<a href="https://docs.google.com/presentation/d/1iGpA9BsqddGyu8RRBpAGEHijB_1yT37_t7oQ78zZtGM/edit?usp=sharing">Presentation Kasa</a>
+
+<img src = "./src/assets/images/pages.png"/>
+
+· Date de réalisation: novembre-désembre 2022.
+
+## Technologies
+
+<img src = "./src/assets/images/Technologies.png"/>
+
+## Architecture
+
+### Schéma de l'architecture
+
+<img src = "./src/assets/images/Architecture.png"/>
+
+
+===================================================================================================
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,10 +1,10 @@
 # Kasa
 
-<img src = "./imgReadme/Hot-Takes.png"/>
+<img src = "./src/assets/images/logo.png"/>
 
 # P7 · Créez une application web de location immobilière avec React
 
-
+<img src = "./src/assets/images/PortadaKasa.png"/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,5 +1,7 @@
 # Kasa
 
+## Pour visiter le site en ligne <a href="https://greenbeetlestore.github.io/Kasa/">cliquez ici</a>, une page 404 s'ouvrira, puis cliquez sur "Accueil" dans le menu de navigation.
+
 <img src = "./src/assets/images/IntroKasa.png"/>
 
 # P7 · Créez une application web de location immobilière avec React
